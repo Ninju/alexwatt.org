@@ -1,5 +1,7 @@
 AlexApp.module("About.Controllers", (Controllers, AlexApp, Backbone, Marionette, $, _) ->
   Controllers.Show = {
-    aboutPage: () -> console.log("Controllers.Show: Show About page")
+    aboutPage: () ->
+      aboutPageView = new AlexApp.About.Views.AboutPage()
+      AlexApp.contentRegion.show(aboutPageView)
   }
 )
