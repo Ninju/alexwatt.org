@@ -11,3 +11,4 @@ AlexApp.on("initialize:after", () ->
     if this.getCurrentRoute() == ""
       this.navigate("about")
       AlexApp.trigger("about:show")
+)
