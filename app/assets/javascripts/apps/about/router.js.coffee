@@ -6,7 +6,7 @@ AlexApp.module("About", (About, AlexApp, Backbone, Marionette, $, _) ->
   })
 
   API = {
-    showAbout: () -> About.Controllers.Show.aboutPage()
+    showAbout: () -> About.Show.Controller.showAbout()
   }
 
   AlexApp.on("about:show", () ->
