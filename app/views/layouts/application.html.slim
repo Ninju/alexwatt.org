@@ -1,0 +1,47 @@
+doctype html
+html lang="en"
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    meta name="description" content=""
+    meta name="author" content=""
+    link rel="shortcut icon" href="../../assets/ico/favicon.ico"
+
+    title AlexWatt.org
+
+    link href="../../dist/css/bootstrap.min.css" rel="stylesheet"
+    link href="sticky-footer.css" rel="stylesheet"
+
+    = stylesheet_link_tag    "application", media: "all" 
+    = javascript_include_tag "application" 
+    = csrf_meta_tags 
+
+    /! HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries 
+    /[if lt IE 9]
+      script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"
+      script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"
+    /[endif]
+  
+
+  body
+    div class="container"
+      div class="page-header"
+        h1 Alexander Watt
+      
+      p class="lead" Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS.
+
+      p
+        'Use 
+        a href="../sticky-footer-navbar"
+        'the sticky footer with a fixed navbar if need be, too.
+    
+
+    div id="footer"
+      div class="container"
+        p class="text-muted" 
+          'Place sticky footer content here.
+      
+    
+  
+
