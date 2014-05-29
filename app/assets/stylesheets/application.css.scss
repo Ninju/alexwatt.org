@@ -11,3 +11,35 @@
  *= require_self
  *= require_tree .
  */
+
+#navigation {
+  float: left;
+
+  ul {
+    list-style-type: none;
+    text-align: right;
+
+    font-family: "abeatbykai-regular";
+    font-size: 30px;
+    text-transform: lowercase;
+
+    li.active {
+      a {   
+        color: #000000;
+      }   
+    }
+
+    li {
+      margin: 20px;
+
+      a {
+        color: #a0a0a0;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: #000000;
+      } 
+    }
+  }
+}
