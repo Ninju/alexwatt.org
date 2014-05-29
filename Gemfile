@@ -16,6 +16,7 @@ group :assets do
   gem 'coffee-rails', '3.2.2'
   gem 'uglifier', '1.3.0'
   gem 'jquery-ui-rails', '4.0.5'
+  gem 'skim', '0.9.3'
 
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
