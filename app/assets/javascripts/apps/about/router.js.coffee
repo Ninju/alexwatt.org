@@ -6,8 +6,13 @@ AlexApp.module("About", (About, AlexApp, Backbone, Marionette, $, _) ->
   })
 
   API = {
-    showAbout: () -> console.log("Show about page")
+    showAbout: () -> About.Controllers.Show.aboutPage()
   }
+
+  AlexApp.on("about:show", () ->
+    AlexApp.navigate("about")
+    API.showAbout()
+  )
 
   AlexApp.addInitializer(() ->
     new About.Router({
