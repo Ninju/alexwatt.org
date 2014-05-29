@@ -17,6 +17,7 @@ group :assets do
   gem 'uglifier', '1.3.0'
   gem 'jquery-ui-rails', '4.0.5'
   gem 'skim', '0.9.3'
+  gem 'turbo-sprockets-rails3', '0.3.10'
 
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
