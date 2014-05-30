@@ -8,7 +8,7 @@ AlexApp.module("Portfolio", (Portfolio, AlexApp, Backbone, Marionette, $, _) ->
   API = {
     listPortfolio: () -> 
       AlexApp.execute("set:active:page", "portfolio")
-      console.log("LIST PORTFOLIO ITEMS")
+      Portfolio.List.Controller.listPortfolio()
   }
 
   AlexApp.on("portfolio:list", () ->
