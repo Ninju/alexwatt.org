@@ -1,1 +1,1 @@
-a href="#{@url}" = @name
+a href="#{@url_path}" = @name
