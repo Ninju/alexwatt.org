@@ -1,0 +1,85 @@
+p class="lead"
+  'This is a collection of some of my past work. The
+  a href="#" pass protected portfolio
+  '  contains secret projects I can't show here.
+  'Contact me for a password.
+
+
+div class="portfolio-item"
+  div class="image-gallery"
+    img src="/assets/portfolio/alexwatt3.png" 
+
+  h3 AlexWatt.org
+
+  p 
+    'My personal portfolio site which hosts a number of games, code samples, and examples of past and present work.
+  p
+    'If you're reading this you're already here, so I will jump straight into the Tech Overview. The website is
+    a href="http://www.github.com/Ninju/alexwatt.org" open source
+    '  and can be found on 
+    a href="http://www.github.com/Ninju" Github
+    '.
+
+  h6 Tech Overview
+
+  p
+    'Ruby on Rails, Marionette.js, Coffeescript, Slim, Skim, Unicorn, PostgreSQL, Less, Sass, jQuery, Bootstrap, and deployed on Heroku.
+
+
+div class="portfolio-item in-progress"
+  div class="image-gallery"
+    img src="/assets/portfolio/pomador.png" 
+
+  h3 Pomador
+
+  p 
+    'Time management application based on The Pomodoro Technique.
+
+  p
+    'The most important part of time tracking and management, is learning to improve the way your time is spent.
+    'Computers allow us to aggregate data quickly, in many different formats, in a permanent universally accessible location.
+
+  p
+    'If your records are visual, you can spot trends. Learn from them more easily, faster. 
+    'The end result: you waste less time. Even during the periods when you are working.
+
+  p
+    'Our goal is to bring Pomador to all your devices.
+    'Never again will a task go forgotten. And you can complete a pomodoro anywhere.
+
+
+  h6 Tech Overview
+
+  p
+    'Ruby on Rails, Marionette.js, Coffeescript, Redis, Sidekiq, Slim, Skim, Unicorn, PostgreSQL, Less, Sass, jQuery, Bootstrap, and deployed on Heroku.
+
+
+div class="portfolio-item"
+  div class="image-gallery"
+    img src="/assets/portfolio/salad-match.png" 
+
+  h3 Salad Match
+
+  p 
+    'Dating website (no longer) from the JustSalad restaurant chain aiming to match couples based on salad preferences.
+
+  h6 Tech Overview
+
+  p
+    'Ruby on Rails, SQL.
+
+
+div class="portfolio-item"
+  div class="image-gallery"
+    img src="/assets/portfolio/cre8buzz.png" 
+
+  h3 cre8buzz
+
+  p 
+    'Social networking website for bloggers and internet wannabes.
+
+  h6 Tech Overview
+
+  p
+    'Ruby on Rails, SOLR, jQuery, capistrano.
+
