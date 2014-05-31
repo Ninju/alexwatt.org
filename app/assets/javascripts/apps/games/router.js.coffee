@@ -8,6 +8,7 @@ AlexApp.module("Games", (Games, AlexApp, Backbone, Marionette, $, _) ->
   API = {
     listGames: () ->
       AlexApp.execute("set:active:page", "games")
+      Games.List.Controller.listGames()
   }
 
   AlexApp.on("games:list", () ->
