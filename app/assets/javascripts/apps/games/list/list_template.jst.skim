@@ -32,3 +32,12 @@ li class="section"
     'Lights Out game written in jQuery. The source code is very simple and easy to follow, you can
     a href="/assets/javascripts/games/lights_out.js" read it here
     '.
+
+li class="section"
+  div class="image-gallery"
+    img src="/assets/games/newtons_cradle.png"
+
+  h3 Newton's Cradle
+
+  p 
+    'Physics simulation of the well known "Newton's Cradle"
