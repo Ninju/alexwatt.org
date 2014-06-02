@@ -3,6 +3,14 @@ AlexApp.module("Games.List", (List, AlexApp, Backbone, Marionette, $, _) ->
     tagName: "li"
     className: "section"
     template: AlexApp.getTemplate("apps/games/list/list_item_template")
+
+    events: {
+      "click a.js-show": "clickedGame"
+    }
+
+    "clickedGame": (e) ->
+      e.preventDefault()
+      this.trigger("games:show", this.model)
   })
 
   List.Games = Marionette.CompositeView.extend({
