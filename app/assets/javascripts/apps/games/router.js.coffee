@@ -22,7 +22,7 @@ AlexApp.module("Games", (Games, AlexApp, Backbone, Marionette, $, _) ->
   )
 
   AlexApp.on("games:show", (id) ->
-    AlexApp.navigate("games")
+    AlexApp.navigate("games/#{id}")
     API.showGame(id)
   )
 
