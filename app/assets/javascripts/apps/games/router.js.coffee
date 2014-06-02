@@ -2,7 +2,6 @@ AlexApp.module("Games", (Games, AlexApp, Backbone, Marionette, $, _) ->
   Games.Router = Marionette.AppRouter.extend({
     appRoutes: {
       "games": "listGames"
-      "games/:id": "showGame"
     }
   })
 
@@ -22,7 +21,6 @@ AlexApp.module("Games", (Games, AlexApp, Backbone, Marionette, $, _) ->
   )
 
   AlexApp.on("games:show", (id) ->
-    AlexApp.navigate("games/#{id}")
     API.showGame(id)
   )
 
