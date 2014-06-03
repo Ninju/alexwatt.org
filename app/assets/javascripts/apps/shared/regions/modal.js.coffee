@@ -2,6 +2,7 @@ AlexApp.module("Shared.Regions", (Regions, AlexApp, Backbone, Marionette, $, _) 
   Regions.Modal = Marionette.Region.extend({
     onShow: (view) ->
       this.listenTo(view, "dialog:close", this.closeDialog)
+      this.listenTo(view, "set:dialog:position", this.setDialogPosition)
 
       self = this
       this.$el.dialog({
@@ -10,10 +11,6 @@ AlexApp.module("Shared.Regions", (Regions, AlexApp, Backbone, Marionette, $, _) 
         width: view.width || "auto"
         draggable: view.draggable || false
         height: view.height || "auto"
-
-        buttons: [
-          { text: "OK", click: () -> LightsOut.start() }
-        ]
 
         position: {
           my: "center"
@@ -25,9 +22,14 @@ AlexApp.module("Shared.Regions", (Regions, AlexApp, Backbone, Marionette, $, _) 
           self.closeDialog()
       })
 
+      view.setDialog && view.setDialog(this.$el.dialog)
+
     closeDialog: () ->
       this.stopListening()
       this.close()
       this.$el.dialog("destroy")
+
+    setDialogPosition: (position) ->
+      this.$el.dialog("option", "position", position)
   })
 )
