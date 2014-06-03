@@ -1,0 +1,10 @@
+div id="cocos2d-app" style="width: 480px; height: 320px; margin: auto;" 
+
+p 
+  'Drag any of the balls, let go, then enjoy watching them fly into each other.
+
+
+p 
+  a href="http://www.github.com/Ninju/newtons_cradle" View Source Code
+
+script src="/assets/games/newtons_cradle.js" type="text/javascript" 

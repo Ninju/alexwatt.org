@@ -1,0 +1,41 @@
+@import "twitter/bootstrap/bootstrap";
+@import "twitter/bootstrap/mixins";
+
+@portfolio-item-border-style: 1px dashed #000000;
+
+.in-progress {
+  .image-gallery {
+    &:before {
+      background: rgba(0,0,0,0) url("/assets/portfolio/workinprogress.png");
+    }
+  }
+}
+
+.portfolio-item {
+  width: 100%;
+  border-top: @portfolio-item-border-style;
+  padding: 10px;
+
+  .clearfix();
+
+  .image-gallery {
+    margin: 20px;
+    margin-top: 10px;
+    
+    img {
+      border: 2px solid #000;
+      width: 300px;
+
+    }
+  }
+
+  &:nth-child(2n) {
+    .image-gallery { float: right; }
+    background-color: #f9f9f9;
+  }
+
+  &:nth-child(2n + 1) {
+    h3 { text-align: left; }
+    .image-gallery { float: left; }
+  }
+}

@@ -1,0 +1,67 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+@import "bootstrap_and_overrides.css";
+@import "twitter/bootstrap/bootstrap";
+
+@gridColumns: 12;
+
+body {
+  padding-top: 60px;
+}
+
+#site-wrapper {
+  margin: auto;
+  .makeRow();
+}
+
+div.center-column {
+  .makeColumn(10)
+}
+
+.side-panel {
+  .makeColumn(4);
+}
+
+ul#navigation {
+  list-style-type: none;
+  text-align: right;
+
+  font-family: "abeatbykai-regular";
+  font-size: 40px;
+  text-transform: lowercase;
+
+  padding: 0px;
+  padding-top: 100px;
+  margin: 0px;
+
+  li.active {
+    a {   
+      color: #000000;
+    }   
+  }
+
+  li {
+    margin: 35px;
+
+    a {
+      background-color: #ffffff;
+      color: #a0a0a0;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #000000;
+    } 
+  }
+}
