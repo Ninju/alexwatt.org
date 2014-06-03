@@ -22,8 +22,6 @@ AlexApp.module("Shared.Regions", (Regions, AlexApp, Backbone, Marionette, $, _) 
           self.closeDialog()
       })
 
-      view.setDialog && view.setDialog(this.$el.dialog)
-
     closeDialog: () ->
       this.stopListening()
       this.close()
