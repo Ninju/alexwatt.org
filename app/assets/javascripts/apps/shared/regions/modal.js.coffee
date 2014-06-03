@@ -10,11 +10,17 @@ AlexApp.module("Shared.Regions", (Regions, AlexApp, Backbone, Marionette, $, _) 
         width: view.width || "auto"
         draggable: view.draggable || false
         height: view.height || "auto"
+
+        buttons: [
+          { text: "OK", click: () -> LightsOut.start() }
+        ]
+
         position: {
           my: "center"
           at: "center"
           of: window
         }
+
         close: (e, ui) ->
           self.closeDialog()
       })

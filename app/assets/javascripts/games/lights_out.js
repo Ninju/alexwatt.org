@@ -1,30 +1,32 @@
-$( document ).ready( function() {
-  var Cell = {
-    isOn : function() {
-      return $( this ).hasClass( "on" );
-    },
-    isOff : function() {
-      return !this.isOn();
-    },
-    flip : function() {
-      if( this.isOn() ) {
-        $( this ).removeClass( "on" ).addClass( "off" );
-      } else {
-        $( this ).removeClass( "off" ).addClass( "on" );
-      }
-    },
-    randomStatus : function() {
-      if( Math.round( Math.random() ) == 1 ) {
-        return "off";
-      }
-
-      return "on";
-    },
-    flipToRandom : function() {
-      $( this ).removeClass( "on" ).removeClass( "off" ).addClass( this.randomStatus() );
+var Cell = {
+  isOn : function() {
+    return $( this ).hasClass( "on" );
+  },
+  isOff : function() {
+    return !this.isOn();
+  },
+  flip : function() {
+    if( this.isOn() ) {
+      $( this ).removeClass( "on" ).addClass( "off" );
+    } else {
+      $( this ).removeClass( "off" ).addClass( "on" );
     }
-  }
+  },
+  randomStatus : function() {
+    if( Math.round( Math.random() ) == 1 ) {
+      return "off";
+    }
 
+    return "on";
+  },
+  flipToRandom : function() {
+    $( this ).removeClass( "on" ).removeClass( "off" ).addClass( this.randomStatus() );
+  }
+}
+
+window.LightsOut = {};
+
+LightsOut.start = function() {
   var gameOverDiv  = $( "#game_over" ),
       resetButton  = $( "#reset" ),
       movesText    = $( "#moves_text" ),
@@ -73,7 +75,8 @@ $( document ).ready( function() {
       }
     }
 
-    if( $( cellSelector ).filter( ".off" ).length == 0 ) {
+    console.log($(cellSelector).filter("on"));
+    if( $( cellSelector ).filter( ".on" ).length == 0 ) {
       solved = true;
       gameOverDiv.show( "slow" );
       solvedText.html( parseInt( solvedText.html() ) + 1 );
@@ -82,4 +85,4 @@ $( document ).ready( function() {
 
   gameOverDiv.hide();
   resetButton.click();
-} );
+}

@@ -27,6 +27,8 @@ AlexApp.module("Games.Models", (Models, AlexApp, Backbone, Marionette, $, _) ->
             name: "Lights Out"
             description: "Simple addictive puzzle game written in jQuery."
             image_path: "games/lights_out.png"
+            onShow: () -> LightsOut.start()
+            template: "apps/games/show/show_template"
           }
 
           {

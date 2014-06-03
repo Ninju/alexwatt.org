@@ -2,6 +2,6 @@ div class="image-gallery"
   img src="/assets/#{@image_path}"
 
 h3 
-  a href="games" class="js-show" = @name
+  a href="games/#{@id}" class="js-show" = @name
 
 p = @description

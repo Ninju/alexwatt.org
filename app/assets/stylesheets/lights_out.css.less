@@ -1,0 +1,29 @@
+@import "bootstrap_and_overrides.css";
+@import "twitter/bootstrap/bootstrap";
+
+#lights_out {
+  text-align: center;
+
+  table {
+    margin: 20px auto;
+    background-color: #000000;
+    outline: 5px solid #ff0000;
+    padding: 10px;
+
+    .size(400px, 400px);
+
+    .cell {
+      width: 4em;
+      height: 4em;
+      border: 5px solid #000;
+    }
+
+    .on {
+      background-color: #ffff00;
+    }
+
+    .off {
+      background-color: #0000ff;
+    }
+  }
+}
