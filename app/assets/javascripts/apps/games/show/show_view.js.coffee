@@ -25,9 +25,25 @@ AlexApp.module("Games.Show", (Show, AlexApp, Backbone, Marionette, $, _) ->
 
       this.trigger("set:dialog:position", { my: "center", at: "center", of: window })
 
-
-
   Show.FuelLife = Marionette.ItemView.extend
+    id: "fuel_life"
+    template: AlexApp.getTemplate("apps/games/show/fuel_life_template")
+
+    initialize: () ->
+      @title = "Fuel Life"
+
+    onShow: () ->
+      GetUnity = () ->
+        if (typeof unityObject != "undefined")
+          return unityObject.getObjectById("unityPlayer")
+        
+        null
+
+      if (typeof unityObject != "undefined")
+        unityObject.embedUnity("unityPlayer", "unity_games/FuelLife.unity3d", 1000, 700)
+
+      this.trigger("set:dialog:closeOnEscape", false)
+      this.trigger("set:dialog:position", { my: "center", at: "center", of: window })
 
   Show.NewtonsCradle = Marionette.ItemView.extend
     id: "newtons_cradle"
