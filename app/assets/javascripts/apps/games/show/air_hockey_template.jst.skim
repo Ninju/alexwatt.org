@@ -1,0 +1,9 @@
+div id="cocos2d-app" 
+
+p 
+  'Drag either paddle into the puck. 
+
+p 
+  a href="http://www.github.com/Ninju/js_air_hockey" View Source Code
+
+script src="/assets/games/air_hockey.js" type="text/javascript" 

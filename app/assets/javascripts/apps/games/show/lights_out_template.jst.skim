@@ -1,0 +1,23 @@
+div id="lights_out"
+  div id="game_over"
+    h2 Congratulations, you solved it!
+
+  table 
+    - for r in [1,2,3,4,5]
+      tr
+        - for c in [1,2,3,4,5]
+          td id="r#{r}c#{c}" class="cell"
+
+  p
+    button id="reset" value="Reset" class="btn btn-small" type="button" Reset
+  p
+    '  Solved :
+    span id="solved_text" 0
+    '  Moves :
+    span id="moves_text" 0
+
+  p
+    'The goal is to turn all the lights off. Simply click a light to flip it on or off, but this will also flip it's neighbours (north, east, south, west).
+
+  p
+    a href="/assets/javascripts/games/lights_out.js" View Source Code

@@ -4,8 +4,7 @@ p class="lead"
   '  contains secret projects I can't show here.
   'Contact me for a password.
 
-
-div class="portfolio-item"
+li class="section"
   div class="image-gallery"
     img src="/assets/portfolio/alexwatt3.png" 
 
@@ -26,7 +25,7 @@ div class="portfolio-item"
     'Ruby on Rails, Marionette.js, Coffeescript, Slim, Skim, Unicorn, PostgreSQL, Less, Sass, jQuery, Bootstrap, and deployed on Heroku.
 
 
-div class="portfolio-item in-progress"
+li class="section in-progress"
   div class="image-gallery"
     img src="/assets/portfolio/pomador.png" 
 
@@ -54,7 +53,7 @@ div class="portfolio-item in-progress"
     'Ruby on Rails, Marionette.js, Coffeescript, Redis, Sidekiq, Slim, Skim, Unicorn, PostgreSQL, Less, Sass, jQuery, Bootstrap, and deployed on Heroku.
 
 
-div class="portfolio-item"
+li class="section"
   div class="image-gallery"
     img src="/assets/portfolio/salad-match.png" 
 
@@ -69,7 +68,7 @@ div class="portfolio-item"
     'Ruby on Rails, SQL.
 
 
-div class="portfolio-item"
+li class="section"
   div class="image-gallery"
     img src="/assets/portfolio/cre8buzz.png" 
 

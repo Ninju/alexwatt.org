@@ -1,0 +1,40 @@
+@import "twitter/bootstrap/bootstrap";
+@import "twitter/bootstrap/mixins";
+
+@section-border-style: 1px dashed #000000;
+@section-background-color: #f9f9f9;
+
+ul.section-list {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+
+  li.section {
+    width: 100%;
+    border-top: @section-border-style;
+    padding: 10px;
+    
+    .clearfix();
+
+    .image-gallery {
+      margin: 20px;
+      margin-top: 10px;
+      
+      img {
+        border: 2px solid #000;
+        width: 300px;
+      }
+    }
+
+    &:nth-child(2n) {
+      .image-gallery { float: right; }
+      background-color: #f9f9f9;
+    }
+
+    &:nth-child(2n + 1) {
+      h3 { text-align: left; }
+      .image-gallery { float: left; }
+    }
+  }
+}
