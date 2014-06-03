@@ -1,2 +1,39 @@
 p class="lead"
-  'I am a Software Developer from the United Kingdom with a passion for learning.
+  'I'm an enthusiastic Software Developer, who thoroughly enjoys finding elegant solutions to complex problems. 
+  'I have a very high aptitude, and am always looking to better myself through an almost insatiable need to learn new skills.
+
+h4 
+  'Languages
+  small a collection over the past 10 years
+
+div class="progress"
+  div class="bar-success bar" role="progressbar" style="width: 95%"
+    span class="sr-only" Ruby
+
+div class="progress"
+  div class="bar--success bar" role="progressbar" style="width: 80%"
+    span class="sr-only" OCaml
+
+div class="progress"
+  div class="bar-warning bar" role="progressbar" style="width: 100%"
+    span class="sr-only" Javascript
+
+div class="progress"
+  div class="bar-info bar" role="progressbar" style="width: 88%"
+    span class="sr-only" Haskell
+
+div class="progress"
+  div class="bar-success bar" role="progressbar" style="width: 60%"
+    span class="sr-only" Lua
+
+div class="progress"
+  div class="bar-warning bar" role="progressbar" style="width: 70%"
+    span class="sr-only" Objective-C
+
+div class="progress"
+  div class="bar-success bar" role="progressbar" style="width: 90%"
+    span class="sr-only" Scheme
+
+div class="progress"
+  div class="bar-danger bar" role="progressbar" style="width: 30%"
+    span class="sr-only" Python
