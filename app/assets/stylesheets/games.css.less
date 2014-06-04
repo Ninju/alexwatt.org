@@ -4,6 +4,11 @@
 @section-border-style: 1px dashed #000000;
 @section-background-color: #f9f9f9;
 
+.play-button {
+  content: url("games/play_button.png");
+  .size(150px; 150px);
+} 
+
 ul.section-list {
   list-style-type: none;
   margin: 0px;
@@ -14,16 +19,83 @@ ul.section-list {
     width: 100%;
     border-top: @section-border-style;
     padding: 10px;
-    
+
+    .view-source-code {
+      text-align: center;
+      font-size: 22px;
+      font-family: Helvetica;
+
+      margin: 10px;
+      padding: 10px;
+
+      a {
+        margin-left: 1px;
+        text-decoration: none;
+        color: #333;
+        opacity: 0.3;
+
+        &:hover {
+          opacity: 1.0;
+        } 
+      }
+
+      i.icon-download {
+        padding-right: 5px;
+      }
+    }
+
+    h3 {
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      small {
+        padding-left: 10px;
+      }
+    }
+      
     .clearfix();
 
     .image-gallery {
       margin: 20px;
       margin-top: 10px;
+      position: relative;
+      text-align: center;
       
       img {
+        position: relative;
         border: 2px solid #000;
-        width: 300px;
+        max-width: 300px;
+        max-height: 300px;
+      }
+
+      &:hover {
+        .image-overlay {
+          display: inline;
+        }
+      }
+
+      .image-overlay {
+        position: absolute;
+        display: none;
+        left: 0;
+        top: 0;
+
+        background: rgba(0,0,0,0.3);
+        width: 100%;
+        height: 100%;
+
+        i {
+          opacity: 0.8;
+          left: 50%;
+          top: 50%;
+          .size(100px; 100px);
+          margin-left: -50px;
+          margin-top: -50px;
+          color: #fff;
+          position: absolute;
+        }
       }
     }
 
