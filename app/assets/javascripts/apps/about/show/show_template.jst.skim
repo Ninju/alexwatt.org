@@ -4,36 +4,16 @@ p class="lead"
 
 h4 
   'Languages
-  small a collection over the past 10 years
+  small a collection over the past 15 years
 
-div class="progress"
-  div class="bar-success bar" role="progressbar" style="width: 95%"
-    span class="sr-only" Ruby
+- colors = ["success","warning","danger","info"]
 
-div class="progress"
-  div class="bar--success bar" role="progressbar" style="width: 80%"
-    span class="sr-only" OCaml
+- for language_stat in @language_stats
+  - color = colors[Math.floor(Math.random() * colors.length)]
 
-div class="progress"
-  div class="bar-warning bar" role="progressbar" style="width: 100%"
-    span class="sr-only" Javascript
+  div class="progress"
+    span class="year-started" = language_stat.year_started
+    div class="bar-#{color} bar" role="progressbar" style="width: #{100 * (2014 - language_stat.year_started) / (2014 - 2000)}%;"
+      span class="sr-only" = language_stat.language_name
 
-div class="progress"
-  div class="bar-info bar" role="progressbar" style="width: 88%"
-    span class="sr-only" Haskell
-
-div class="progress"
-  div class="bar-success bar" role="progressbar" style="width: 60%"
-    span class="sr-only" Lua
-
-div class="progress"
-  div class="bar-warning bar" role="progressbar" style="width: 70%"
-    span class="sr-only" Objective-C
-
-div class="progress"
-  div class="bar-success bar" role="progressbar" style="width: 90%"
-    span class="sr-only" Scheme
-
-div class="progress"
-  div class="bar-danger bar" role="progressbar" style="width: 30%"
-    span class="sr-only" Python
+    span class="years" = language_stat.year_ended || 2014
