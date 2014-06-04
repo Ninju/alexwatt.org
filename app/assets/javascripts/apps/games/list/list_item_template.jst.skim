@@ -1,15 +1,21 @@
-div class="image-gallery"
-  a href="games/#{@id}" class="js-show"
-    img src="/assets/#{@image_path}"
-    span class="image-overlay"
-      i class="icon play-button"
+div class="clearfix"
+  div class="image-gallery"
+    a href="games/#{@id}" class="js-show"
+      img src="/assets/#{@image_path}"
+      span class="image-overlay"
+        i class="icon play-button"
 
-h3 
-  a href="games/#{@id}" class="js-show" = @name
-  - if @description
-    small = @description
+  h3 
+    a href="games/#{@id}" class="js-show" = @name
+    - if @description
+      small = @description
 
 
-- if @paragraphs
-  - for paragraph in @paragraphs
-    p = paragraph
+  - if @paragraphs
+    - for paragraph in @paragraphs
+      p = paragraph
+
+- if @source_code_url
+  p class="view-source-code"
+    i class="icon icon-download"
+    a href=@source_code_url View Source Code

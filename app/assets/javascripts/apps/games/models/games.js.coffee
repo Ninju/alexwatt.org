@@ -32,6 +32,7 @@ AlexApp.module("Games.Models", (Models, AlexApp, Backbone, Marionette, $, _) ->
                 "A player's paddle may not cross the center line and into their opponents territory. The goal is to hit the puck into your opponents goal, whilst defending your own goal with the paddle provided."
               ]
             image_path: "games/air_hockey_snapshot.png"
+            source_code_url: "https://github.com/Ninju/js_air_hockey"
           }
 
           {
@@ -46,6 +47,7 @@ AlexApp.module("Games.Models", (Models, AlexApp, Backbone, Marionette, $, _) ->
                 "Have a go at trying to turn off all the lights!"
               ]
             image_path: "games/lights_out.png"
+            source_code_url: "https://github.com/Ninju/js-lights-out"
           }
 
           {
@@ -57,6 +59,7 @@ AlexApp.module("Games.Models", (Models, AlexApp, Backbone, Marionette, $, _) ->
               "Drag balls with the mouse to 'play'. Written in Javascript using the Cocos2d Javascript framework."
             ]
             image_path: "games/newtons_cradle.png"
+            source_code_url: "https://github.com/Ninju/newtons_cradle"
           }
         ])
 

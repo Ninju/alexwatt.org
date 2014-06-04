@@ -20,6 +20,30 @@ ul.section-list {
     border-top: @section-border-style;
     padding: 10px;
 
+    .view-source-code {
+      text-align: center;
+      font-size: 22px;
+      font-family: Helvetica;
+
+      margin: 10px;
+      padding: 10px;
+
+      a {
+        margin-left: 1px;
+        text-decoration: none;
+        color: #333;
+        opacity: 0.3;
+
+        &:hover {
+          opacity: 1.0;
+        } 
+      }
+
+      i.icon-download {
+        padding-right: 5px;
+      }
+    }
+
     h3 {
       a {
         text-decoration: none;
