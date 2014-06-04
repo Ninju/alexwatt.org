@@ -4,14 +4,16 @@ p class="lead"
 
 h4 
   'Languages
-  small a collection over the past 10 years
+  small a collection over the past 15 years
 
 - colors = ["success","warning","danger","info"]
 
 - for language_stat in @language_stats
   - color = colors[Math.floor(Math.random() * colors.length)]
-  div class="progress clearfix"
-    div class="bar-#{color} bar" role="progressbar" style="width: #{100 * (2014 - language_stat.year_started) / (2014 - 2003)}%;"
+
+  div class="progress"
+    span class="year-started" = language_stat.year_started
+    div class="bar-#{color} bar" role="progressbar" style="width: #{100 * (2014 - language_stat.year_started) / (2014 - 2000)}%;"
       span class="sr-only" = language_stat.language_name
 
-    span class="years" = language_stat.year_started
+    span class="years" = language_stat.year_ended || 2014

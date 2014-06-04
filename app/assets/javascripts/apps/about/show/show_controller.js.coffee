@@ -4,7 +4,7 @@ AlexApp.module("About.Show", (Show, AlexApp, Backbone, Marionette, $, _) ->
       aboutPageView = new Show.AboutPage
         model: new Backbone.Model
           language_stats: [
-            { language_name: "Javascript", year_started: 2003 }
+            { language_name: "Javascript", year_started: 2001 }
             { language_name: "Ruby", year_started: 2005 }
             { language_name: "Haskell", year_started: 2007 }
             { language_name: "OCaml", year_started: 2011 }
