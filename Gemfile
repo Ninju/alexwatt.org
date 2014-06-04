@@ -40,7 +40,7 @@ gem 'twitter-bootstrap-rails'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-gem 'unicorn'
+gem 'unicorn', '4.3.1'
 
 # Deploy with Capistrano
 # gem 'capistrano'

@@ -1,0 +1,31 @@
+.progress {
+  &:hover {
+    cursor: pointer;
+
+    .years, .year-started {
+      color:#000;
+    }
+  }
+
+  .year() {
+    font-family: courier;
+    background: rgba(200, 200, 200, 0.4);
+    color: #fff; 
+  }
+
+  .year-started {
+    .year();
+    left: 100px;
+    display:block;
+    float: left;
+  }
+
+  .years {
+    display:none; 
+    .year();
+
+    padding-right: 4px;
+    right: -100px; 
+  }
+}
+
