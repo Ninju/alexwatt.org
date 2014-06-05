@@ -12,8 +12,7 @@ h4
   - color = colors[Math.floor(Math.random() * colors.length)]
 
   div class="progress"
-    span class="year-started" = language_stat.year_started
-    div class="bar-#{color} bar" role="progressbar" style="width: #{100 * (2014 - language_stat.year_started) / (2014 - 2000)}%;"
+    div class="bar-#{color} bar pull-right" role="progressbar" style="width: #{100 * (2014 - language_stat.year_started) / (2014 - 2000)}%;"
       span class="sr-only" = language_stat.language_name
 
-    span class="years" = language_stat.year_ended || 2014
+    span class="year-started" = language_stat.year_started
