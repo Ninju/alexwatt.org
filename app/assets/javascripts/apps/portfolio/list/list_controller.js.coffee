@@ -1,7 +1,11 @@
 AlexApp.module("Portfolio.List", (List, AlexApp, Backbone, Marionette, $, _) ->
   List.Controller = {
     listPortfolio: () ->
-      portfolioView = new List.Portfolio()
+      portfolioItems = AlexApp.request("portfolio:items")
+
+      portfolioView = new List.Portfolio
+        collection: portfolioItems
+
       AlexApp.contentRegion.show(portfolioView)
   }
 )
