@@ -1,5 +1,7 @@
 .progress {
-  background-color: #662 !important;
+  @progress-bg-fade: 30%;
+  @progress-bg-color: #000000;
+  background-image: linear-gradient(fade(lighten(@progress-bg-color, 20%), @progress-bg-fade), fade(@progress-bg-color, @progress-bg-fade)) !important;
 
   &:hover {
     cursor: pointer;
@@ -7,6 +9,35 @@
     .year-started {
       color: #000;
     }
+  }
+
+  .bar-color(@baseColor) {
+    background-color: @baseColor;
+    background-image: linear-gradient(lighten(@baseColor, 20%), @baseColor) !important;
+  } 
+
+  .bar-blue {
+    .bar-color(darken(#8a80ff, 15%));
+  }
+
+  .bar-orange {
+    .bar-color(darken(#decb40, 15%));
+  }
+
+  .bar-purple {
+    .bar-color(#3289c7);
+  }
+
+  .bar-red {
+    .bar-color(lighten(#e3000b, 10%));
+  }
+
+  .bar-green {
+    .bar-color(darken(#7ac803, 15%));
+  }
+
+  .bar-yellow {
+    .bar-color(darken(#ffec1c, 20%));
   }
 
   .bar {
