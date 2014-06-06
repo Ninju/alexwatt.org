@@ -3,7 +3,7 @@ class PortfolioItemsController < ApplicationController
 
   def index
     @portfolio_items = PortfolioItem.all
-    respond_with(@portfolio_items)
+    render(json: ActiveModel::ArraySerializer.new(@portfolio_items, each_serializer: PortfolioItemSerializer).to_json)
   end
 
   def create
