@@ -3,3 +3,6 @@ p class="lead"
   'It is only a small subset of the projects with which I have been involved.
 
 ul class="section-list"
+
+p 
+  a href="/portfolio_items/new" class="js-new" Add new item
