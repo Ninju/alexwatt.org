@@ -1,11 +1,16 @@
 AlexApp.module("Portfolio.List", (List, AlexApp, Backbone, Marionette, $, _) ->
   List.Controller = {
     listPortfolio: () ->
-      portfolioItems = AlexApp.request("portfolio:items")
+      fetchingPortfolioItems = AlexApp.request("portfolio:items")
 
-      portfolioView = new List.Portfolio
-        collection: portfolioItems
+      $.when(fetchingPortfolioItems).done((portfolioItems) ->
+        if portfolioItems
+          portfolioView = new List.Portfolio
+            collection: portfolioItems
 
-      AlexApp.contentRegion.show(portfolioView)
+          AlexApp.contentRegion.show(portfolioView)
+        else
+          console.log("No items found.")
+      )
   }
 )

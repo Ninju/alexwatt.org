@@ -56,5 +56,6 @@ Alexwatt::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
   
-  root :to => "main#about"
+  get "/portfolio_items", to: "main#portfolio_items"
+  root to: "main#about"
 end

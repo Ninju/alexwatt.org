@@ -1,0 +1,13 @@
+div class="image-gallery"
+  img src=@image_path
+
+h3 = @name
+
+- for paragraph in @paragraphs
+  p = paragraph
+
+- if @tech_overview
+  h6 Tech Overview
+
+  p = @tech_overview
+
