@@ -1,5 +1,6 @@
 AlexApp.module("Portfolio.Models", (Models, AlexApp, Backbone, Marionette, $, _) ->
-  Models.PortfolioItem = Backbone.Model.extend()
+  Models.PortfolioItem = Backbone.Model.extend
+    urlRoot: "/portfolio_items"
 
   Models.Portfolio     = Backbone.Collection.extend
     url: "/portfolio_items"

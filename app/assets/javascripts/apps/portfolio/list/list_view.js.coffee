@@ -8,4 +8,8 @@ AlexApp.module("Portfolio.List", (List, AlexApp, Backbone, Marionette, $, _) ->
     itemView: List.PortfolioItem
     itemViewContainer: "ul.section-list"
     template: AlexApp.getTemplate("apps/portfolio/list/list_template")
+
+    triggers: {
+      "click a.js-new": "portfolio:item:new"
+    }
 )
