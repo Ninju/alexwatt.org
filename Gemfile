@@ -10,6 +10,7 @@ gem 'pg'
 
 gem 'redcarpet'
 gem 'active_model_serializers'
+gem 'paperclip', '~> 4.1'
 
 # Gems used only for assets and not required
 # in production environments by default.
