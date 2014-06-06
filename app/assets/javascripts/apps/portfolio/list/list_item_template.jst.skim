@@ -1,6 +1,3 @@
-div class="image-gallery"
-  img src=@image_path
-
 h3 = @name
 
 = @description
