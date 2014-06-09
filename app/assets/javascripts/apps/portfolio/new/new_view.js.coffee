@@ -12,6 +12,6 @@ AlexApp.module("Portfolio.New", (New, AlexApp, Backbone, Marionette, $, _) ->
 
     submitClicked: (e) ->
       e.preventDefault()
-      this.trigger("form:submit", Backbone.Syphon.serialize(this))
+      this.$el.find("form").ajaxSubmit()
 
 )

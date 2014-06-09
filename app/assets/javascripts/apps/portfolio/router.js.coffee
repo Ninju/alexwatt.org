@@ -1,12 +1,10 @@
 AlexApp.module("Portfolio", (Portfolio, AlexApp, Backbone, Marionette, $, _) ->
-  Portfolio.Router = Marionette.AppRouter.extend({
-    appRoutes: {
+  Portfolio.Router = Marionette.AppRouter.extend
+    appRoutes:
       "portfolio": "listPortfolio"
-    }
-  })
 
   API = {
-    listPortfolio: () -> 
+    listPortfolio: () ->
       AlexApp.execute("set:active:page", "portfolio")
       Portfolio.List.Controller.listPortfolio()
   }
@@ -17,8 +15,7 @@ AlexApp.module("Portfolio", (Portfolio, AlexApp, Backbone, Marionette, $, _) ->
   )
 
   AlexApp.addInitializer(() ->
-    new Portfolio.Router({
+    new Portfolio.Router
       controller: API
-    })
   )
 )

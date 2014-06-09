@@ -1,11 +1,15 @@
-form role="form" class="portfolio-item-form" 
+form action="/portfolio_items" method="post" role="form" class="portfolio-item-form" enctype="multipart/form-data"
   div class="form-group" 
-    label for="portfolio-item-name" Name:
-    input type="text" class="form-control" id="portfolio-item-name" name="name" placeholder="Enter project name" 
+    label for="portfolio_item[name]" Name:
+    input type="text" class="form-control" id="portfolio_item[name]" name="portfolio_item[name]" placeholder="Enter project name" 
 
   div class="form-group"
-    label for="portfolio-item-description" Description:
-    textarea id="portfolio-item-description" name="description" rows="8" placeholder="Enter project description..." 
+    label for="portfolio_item[description]" Description:
+    textarea id="portfolio_item[description]" name="portfolio_item[description]" rows="8" placeholder="Enter project description..." 
+
+  div class="form-group"
+    label for="portfolio_item[screenshot]" Screenshot:
+    input type="file" id="portfolio_item[screenshot]" name="portfolio_item[screenshot]" 
 
   div class="btn-toolbar"
     div class="btn-group"

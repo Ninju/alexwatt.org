@@ -1,3 +1,7 @@
+- if @screenshot_url
+  div class="image-gallery"
+    img src=@screenshot_url
+
 h3 = @name
 
 == @description_as_html

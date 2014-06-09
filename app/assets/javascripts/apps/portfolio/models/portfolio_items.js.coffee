@@ -12,7 +12,8 @@ AlexApp.module("Portfolio.Models", (Models, AlexApp, Backbone, Marionette, $, _)
       defer = $.Deferred()
       items.fetch
         success: (data) -> defer.resolve(data)
-        error: (data) -> defer.resolve(undefined)
+        error: (data)   -> defer.resolve(undefined)
+        
 
       defer.promise()
   }

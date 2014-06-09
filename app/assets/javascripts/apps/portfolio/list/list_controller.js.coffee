@@ -4,7 +4,7 @@ AlexApp.module("Portfolio.List", (List, AlexApp, Backbone, Marionette, $, _) ->
       fetchingPortfolioItems = AlexApp.request("portfolio:items")
 
       $.when(fetchingPortfolioItems).done((portfolioItems) ->
-        if portfolioItems
+        if false and portfolioItems
           portfolioView = new List.Portfolio
             collection: portfolioItems
 
@@ -30,7 +30,7 @@ AlexApp.module("Portfolio.List", (List, AlexApp, Backbone, Marionette, $, _) ->
 
           AlexApp.contentRegion.show(portfolioView)
         else
-          console.log("No items found.")
+          AlexApp.trigger("authentication:sign_in")
       )
   }
 )
