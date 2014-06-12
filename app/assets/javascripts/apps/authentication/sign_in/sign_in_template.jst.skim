@@ -5,7 +5,7 @@ p class="alert-info alert"
   a href="mailto:el.zingo@gmail.com" el.zingo@gmail.com
   '.  Thank you for your understanding.
 
-p class="alert alert-danger" id="error-message"
+p class="alert alert-danger" id="auth-error-message"
   'Sorry, but the email and password you entered are not correct.
 
 h4 Login 

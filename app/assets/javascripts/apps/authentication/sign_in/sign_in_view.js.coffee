@@ -10,9 +10,12 @@ AlexApp.module("Authentication.SignIn", (SignIn, AlexApp, Backbone, Marionette, 
       e.preventDefault()
       this.trigger("form:submit", this)
 
-    onShow: () ->
-      $("#error-message").hide()
-
     displayError: () ->
-      $("#error-message").show().delay(5000).fadeOut()
+      errorDiv = $("#auth-error-message")
+
+      if not errorDiv.is(":hidden")
+        errorDiv.stop(true, true)
+        errorDiv.hide()
+
+      errorDiv.show(500).delay(3000).fadeOut(500)
 )
