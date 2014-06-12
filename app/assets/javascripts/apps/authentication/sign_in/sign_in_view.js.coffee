@@ -8,5 +8,11 @@ AlexApp.module("Authentication.SignIn", (SignIn, AlexApp, Backbone, Marionette, 
 
     submitClicked: (e) ->
       e.preventDefault()
-      this.trigger("form:submit", Backbone.Syphon.serialize(this))
+      this.trigger("form:submit", this)
+
+    onShow: () ->
+      $("#error-message").hide()
+
+    displayError: () ->
+      $("#error-message").show().delay(5000).fadeOut()
 )

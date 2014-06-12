@@ -12,6 +12,5 @@ AlexApp.module("Portfolio.New", (New, AlexApp, Backbone, Marionette, $, _) ->
 
     submitClicked: (e) ->
       e.preventDefault()
-      this.$el.find("form").ajaxSubmit()
-
+      this.trigger("form:submit", this)
 )

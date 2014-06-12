@@ -6,12 +6,12 @@ AlexApp.module("Authentication", (Authentication, AlexApp, Backbone, Marionette,
 
   API = {
     signIn: () ->
-      console.log("Signing in")
+      Authentication.SignIn.Controller.signIn()
   }
 
   AlexApp.on("authentication:sign_in", () ->
     AlexApp.navigate("sign_in")
-    console.log("handler reached")
+    API.signIn()
   )
 
   AlexApp.addInitializer(() ->

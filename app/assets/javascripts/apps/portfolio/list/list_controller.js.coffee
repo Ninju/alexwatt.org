@@ -3,8 +3,8 @@ AlexApp.module("Portfolio.List", (List, AlexApp, Backbone, Marionette, $, _) ->
     listPortfolio: () ->
       fetchingPortfolioItems = AlexApp.request("portfolio:items")
 
-      $.when(fetchingPortfolioItems).done((portfolioItems) ->
-        if false and portfolioItems
+      $.when(fetchingPortfolioItems).done((portfolioItems, response) ->
+        if portfolioItems
           portfolioView = new List.Portfolio
             collection: portfolioItems
 
@@ -17,14 +17,15 @@ AlexApp.module("Portfolio.List", (List, AlexApp, Backbone, Marionette, $, _) ->
 
             AlexApp.modalRegion.show(newPortfolioItemView)
 
-            newPortfolioItemView.on("form:submit", (data) ->
-              newPortfolioItem.set(data)
-              if newPortfolioItem.save()
-                console.log(newPortfolioItem)
-                newPortfolioItemView.trigger("dialog:close")
-                AlexApp.trigger("portfolio:list")
-              else
-                console.log("There was a problem")
+            newPortfolioItemView.on("form:submit", (view) ->
+              form = view.$el.find("form")
+              form.ajaxSubmit
+                data:
+                  user_token: AlexApp.user_token
+                  user_email: AlexApp.user_email
+                success: (response) ->
+                  newPortfolioItemView.trigger("dialog:close")
+                  AlexApp.trigger("portfolio:list")
             )
           )
 

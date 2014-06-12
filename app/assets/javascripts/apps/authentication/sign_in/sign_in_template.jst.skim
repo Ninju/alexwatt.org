@@ -5,16 +5,19 @@ p class="alert-info alert"
   a href="mailto:el.zingo@gmail.com" el.zingo@gmail.com
   '.  Thank you for your understanding.
 
+p class="alert alert-danger" id="error-message"
+  'Sorry, but the email and password you entered are not correct.
+
 h4 Login 
 
-form role="form" 
+form role="form" action="/login" method="POST" 
   div class="form-group"
-    label for="session-username" Username:
-    input type="text" class="form-control" id="session-username" name="username" placeholder="Enter your username"
+    label for="user[email]" Email:
+    input type="text" class="form-control" id="user[email]" name="user[email]" placeholder="Enter your email address"
 
   div class="form-group"
-    label for="session-password" Password:
-    input type="password" class="form-control" id="session-password" name="password" placeholder="Enter your password"
+    label for="user[password]" Password:
+    input type="password" class="form-control" id="user[password]" name="user[password]" placeholder="Enter your password"
 
   div class="btn-toolbar"
     div class="btn-group"
