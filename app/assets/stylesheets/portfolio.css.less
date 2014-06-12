@@ -3,14 +3,6 @@
 
 @portfolio-item-border-style: 1px dashed #000000;
 
-.in-progress {
-  .image-gallery {
-    &:before {
-      background: rgba(0,0,0,0) url("/assets/portfolio/workinprogress.png");
-    }
-  }
-}
-
 .portfolio-item {
   width: 100%;
   border-top: @portfolio-item-border-style;
@@ -38,4 +30,9 @@
     h3 { text-align: left; }
     .image-gallery { float: left; }
   }
+}
+
+.portfolio-item-form {
+  textarea, input { width: 90%; }
+  min-width: 600px;
 }

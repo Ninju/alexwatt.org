@@ -2,76 +2,7 @@ p class="lead"
   'This is a collection of some of my past and present work. 
   'It is only a small subset of the projects with which I have been involved.
 
-li class="section"
-  div class="image-gallery"
-    img src="/assets/portfolio/alexwatt3.png" 
+ul class="section-list"
 
-  h3 alexwatt.org
-
-  p 
-    'My personal portfolio site which hosts a number of games, code samples, and examples of past and present work.
-  p
-    'If you're reading this you're already here, so I will jump straight into the Tech Overview. The website is
-    a href="http://www.github.com/Ninju/alexwatt.org" open source
-    '  and can be found on 
-    a href="http://www.github.com/Ninju" Github
-    '.
-
-  h6 Tech Overview
-
-  p
-    'Ruby on Rails, Marionette.js, Coffeescript, Slim, Skim, Unicorn, PostgreSQL, Less, Sass, jQuery, Bootstrap, and deployed on Heroku.
-
-
-li class="section in-progress"
-  div class="image-gallery"
-    img src="/assets/portfolio/pomador.png" 
-
-  h3 Pomador
-
-  p 
-    'Pomador is a time management application based on The Pomodoro Technique.
-
-  p
-    'Designed with the purpose of allowing you to manage your pomodoros from any device at any time.
-    'Carrying a phone is second nature, carrying a sheet of paper titled "Activity Inventory" is simply not.
-
-  p
-    'Managing time becomes painless, simple, and easier to learn from and improve with Pomador.
-
-
-  h6 Tech Overview
-
-  p
-    'Ruby on Rails, Marionette.js, Coffeescript, Redis, Sidekiq, Slim, Skim, Unicorn, PostgreSQL, Less, Sass, jQuery, Bootstrap, MiniTest, Cucumber, and deployed on Heroku.
-
-
-li class="section"
-  div class="image-gallery"
-    img src="/assets/portfolio/salad-match.png" 
-
-  h3 Salad Match
-
-  p 
-    'Dating website (no longer) from the JustSalad restaurant chain aiming to match prospective couples based on salad preferences.
-
-  h6 Tech Overview
-
-  p
-    'Ruby on Rails, SQL.
-
-
-li class="section"
-  div class="image-gallery"
-    img src="/assets/portfolio/cre8buzz.png" 
-
-  h3 cre8buzz
-
-  p 
-    'Social networking website for bloggers and other aspiring internet superstars, designed to give 'the little guy' a big voice.
-
-  h6 Tech Overview
-
-  p
-    'Ruby on Rails, SOLR, jQuery, capistrano, RSpec.
-
+p 
+  a href="/portfolio_items/new" class="js-new" Add new item
