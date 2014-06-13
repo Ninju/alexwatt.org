@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140612125404) do
+ActiveRecord::Schema.define(:version => 20140613165824) do
 
   create_table "portfolio_items", :force => true do |t|
     t.string   "name"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20140612125404) do
     t.string   "screenshot_content_type"
     t.integer  "screenshot_file_size"
     t.datetime "screenshot_updated_at"
+    t.date     "project_start_date"
   end
 
   create_table "users", :force => true do |t|

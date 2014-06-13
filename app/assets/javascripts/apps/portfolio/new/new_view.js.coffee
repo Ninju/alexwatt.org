@@ -10,6 +10,9 @@ AlexApp.module("Portfolio.New", (New, AlexApp, Backbone, Marionette, $, _) ->
       "click .js-submit": "submitClicked"
     }
 
+    onShow: () ->
+      $(".date-input").datepicker()
+
     submitClicked: (e) ->
       e.preventDefault()
       this.trigger("form:submit", this)
