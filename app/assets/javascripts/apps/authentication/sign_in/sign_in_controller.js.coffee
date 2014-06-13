@@ -2,7 +2,7 @@ AlexApp.module("Authentication.SignIn", (SignIn, AlexApp, Backbone, Marionette, 
   SignIn.Controller = {
     signIn: () ->
       loginView = new SignIn.SignIn()
-
+      
       loginView.on("form:submit", (view) ->
         view.$el.find("form").ajaxSubmit
           dataType: "json"
