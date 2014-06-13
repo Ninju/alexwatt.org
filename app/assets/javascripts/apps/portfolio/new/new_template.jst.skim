@@ -8,6 +8,10 @@ form action="/portfolio_items" method="post" role="form" class="portfolio-item-f
     textarea id="portfolio_item[description]" name="portfolio_item[description]" rows="8" placeholder="Enter project description..." 
 
   div class="form-group"
+    label for="portfolio_item[project_start_date]" Date started:
+    input type="text" id="portfolio_item[project_start_date]" name="portfolio_item[project_start_date]" class="date-input"
+
+  div class="form-group"
     label for="portfolio_item[screenshot]" Screenshot:
     input type="file" id="portfolio_item[screenshot]" name="portfolio_item[screenshot]" 
 
@@ -17,3 +21,4 @@ form action="/portfolio_items" method="post" role="form" class="portfolio-item-f
 
     div class="btn-group"
       button type="submit" class="btn btn-default js-submit" Create
+
