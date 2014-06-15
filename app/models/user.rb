@@ -1,8 +1,7 @@
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable
+  devise :database_authenticatable
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
@@ -13,6 +12,18 @@ class User < ActiveRecord::Base
   def assign_authentication_token
     if authentication_token.blank?
       self.authentication_token = generate_authentication_token
+    end
+  end
+
+  class << self
+    def find_by_authentication_params(params)
+      user = find_for_database_authentication(email: params[:email])
+
+      if user && user.valid_password?(params[:password])
+        user
+      else
+        nil
+      end
     end
   end
 
