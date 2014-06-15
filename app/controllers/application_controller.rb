@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
       user       = user_email && User.find_by_email(user_email)
 
       if user && Devise.secure_compare(user.authentication_token, params[:user_token])
-        sign_in user, store: false
+        true
       else
         render json: { status: 401 }, status: :unauthorized
       end
