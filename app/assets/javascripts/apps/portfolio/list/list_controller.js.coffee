@@ -14,6 +14,8 @@ AlexApp.module("Portfolio.List", (List, AlexApp, Backbone, Marionette, $, _) ->
         portfolioView = new List.Portfolio
           collection: portfolioItems
 
+        portfolioView.on("itemview:portfolio:item:delete", (childView, args) -> args.model.destroy())
+
         portfolioView.on("portfolio:item:new", () ->
           newPortfolioItem     = new AlexApp.Portfolio.Models.PortfolioItem()
           newPortfolioItemView = new AlexApp.Portfolio.New.PortfolioItem
@@ -23,19 +25,23 @@ AlexApp.module("Portfolio.List", (List, AlexApp, Backbone, Marionette, $, _) ->
 
           AlexApp.modalRegion.show(newPortfolioItemView)
 
-          newPortfolioItemView.on("form:submit", (view) ->
+          submitForm = (view) ->
             form = view.$el.find("form")
             form.ajaxSubmit
               data:
                 user_token: AlexApp.user_token
                 user_email: AlexApp.user_email
+
               success: (response) ->
                 newPortfolioItemView.trigger("dialog:close")
                 AlexApp.trigger("portfolio:list")
-          )
+
+
+          newPortfolioItemView.on("form:submit", submitForm)
         )
 
         AlexApp.contentRegion.show(portfolioView)
       )
+
   }
 )
