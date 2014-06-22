@@ -9,9 +9,12 @@ AlexApp.module("Portfolio.Common", (Common, AlexApp, Backbone, Marionette, $, _)
       "click .js-submit": "submitClicked"
 
     onShow: () ->
-      $(".date-input").datepicker
+      dateInput = $(".date-input")
+      dateInput.datepicker
         dateFormat: "yy-mm-dd"
         maxDate: new Date()
+      
+      dateInput.datepicker("setDate", this.model.get("project_start_date") or new Date())
 
     submitClicked: (e) ->
       e.preventDefault()
