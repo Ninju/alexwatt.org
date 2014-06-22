@@ -13,7 +13,7 @@ AlexApp.module("Portfolio.Common", (Common, AlexApp, Backbone, Marionette, $, _)
       dateInput.datepicker
         dateFormat: "yy-mm-dd"
         maxDate: new Date()
-      
+
       dateInput.datepicker("setDate", this.model.get("project_start_date") or new Date())
 
     submitClicked: (e) ->
