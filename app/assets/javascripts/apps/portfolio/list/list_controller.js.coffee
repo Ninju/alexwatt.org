@@ -33,8 +33,6 @@ AlexApp.module("Portfolio.List", (List, AlexApp, Backbone, Marionette, $, _) ->
           editPortfolioItemView = new AlexApp.Portfolio.Edit.PortfolioItem
             model: args.model
 
-          editPortfolioItemView.title = "Edit portfolio item"
-
           AlexApp.modalRegion.show(editPortfolioItemView)
 
           editPortfolioItemView.on("form:submit", (view) -> submitForm(view, method: "PUT"))
