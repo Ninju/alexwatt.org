@@ -11,6 +11,7 @@ AlexApp.module("Portfolio.Common", (Common, AlexApp, Backbone, Marionette, $, _)
     onShow: () ->
       $(".date-input").datepicker
         dateFormat: "yy-mm-dd"
+        maxDate: new Date()
 
     submitClicked: (e) ->
       e.preventDefault()
