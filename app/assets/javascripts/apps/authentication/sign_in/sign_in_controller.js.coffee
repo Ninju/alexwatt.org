@@ -10,6 +10,7 @@ AlexApp.module("Authentication.SignIn", (SignIn, AlexApp, Backbone, Marionette, 
             if response.success
               AlexApp.user_token = response.user_token
               AlexApp.user_email = response.user_email
+              AlexApp.user_is_admin = response.user_admin
 
               AlexApp.trigger("portfolio:list")
             else
