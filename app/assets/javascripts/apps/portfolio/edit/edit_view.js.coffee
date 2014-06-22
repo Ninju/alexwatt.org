@@ -5,4 +5,5 @@ AlexApp.module("Portfolio.Edit", (Edit, AlexApp, Backbone, Marionette, $, _) ->
 
     onShow: () ->
       $(".js-submit").text("Update")
+      AlexApp.Portfolio.Common.PortfolioItemForm.prototype.onShow.call(this)
 )
