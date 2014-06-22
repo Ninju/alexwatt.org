@@ -13,6 +13,12 @@ class PortfolioItemsController < ApplicationController
     respond_with(@portfolio_item)
   end
 
+  def destroy
+    @portfolio_item = PortfolioItem.find_by_id(params[:id])
+    @portfolio_item.destroy
+    render json: { success: true }
+  end
+
   private
     def portfolio_item_params
       params[:portfolio_item]
