@@ -5,3 +5,15 @@
 h3 = @name
 
 == @description_as_html
+
+- if AlexApp.user_is_admin
+  div class="btn-toolbar"
+    div class="btn-group"
+      button type="button" class="btn btn-small js-delete" 
+        i class="icon icon-edit"
+        '  Edit 
+
+    div class="btn-group"
+      button type="button" class="btn btn-small js-delete" 
+        i class="icon icon-remove"
+        '  Delete 
