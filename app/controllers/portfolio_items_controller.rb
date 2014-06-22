@@ -6,7 +6,7 @@ class PortfolioItemsController < ApplicationController
   respond_to :json
 
   def index
-    @portfolio_items = PortfolioItem.all
+    @portfolio_items = PortfolioItem.order("project_start_date DESC")
     render json: ActiveModel::ArraySerializer.new(@portfolio_items, each_serializer: PortfolioItemSerializer).to_json
   end
 
