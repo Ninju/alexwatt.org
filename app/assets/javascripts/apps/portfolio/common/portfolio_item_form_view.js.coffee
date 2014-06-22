@@ -9,7 +9,8 @@ AlexApp.module("Portfolio.Common", (Common, AlexApp, Backbone, Marionette, $, _)
       "click .js-submit": "submitClicked"
 
     onShow: () ->
-      $(".date-input").datepicker()
+      $(".date-input").datepicker
+        dateFormat: "yy-mm-dd"
 
     submitClicked: (e) ->
       e.preventDefault()
