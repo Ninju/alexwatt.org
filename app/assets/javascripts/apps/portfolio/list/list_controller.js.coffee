@@ -45,8 +45,6 @@ AlexApp.module("Portfolio.List", (List, AlexApp, Backbone, Marionette, $, _) ->
           newPortfolioItemView = new AlexApp.Portfolio.New.PortfolioItem
             model: newPortfolioItem
 
-          newPortfolioItemView.title = "Add new portfolio item"
-
           AlexApp.modalRegion.show(newPortfolioItemView)
 
           newPortfolioItemView.on("form:submit", submitForm)
