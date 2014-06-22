@@ -7,9 +7,9 @@ AlexApp.module("Portfolio.List", (List, AlexApp, Backbone, Marionette, $, _) ->
     className: "section"
     template: AlexApp.getTemplate("apps/portfolio/list/list_item_template")
 
-    triggers: {
+    triggers:
       "click .js-delete": "portfolio:item:delete"
-    }
+      "click .js-edit"  : "portfolio:item:edit"
 
   List.Portfolio = Marionette.CompositeView.extend
     itemView: List.PortfolioItem
@@ -17,7 +17,6 @@ AlexApp.module("Portfolio.List", (List, AlexApp, Backbone, Marionette, $, _) ->
     template: AlexApp.getTemplate("apps/portfolio/list/list_template")
     emptyView: List.Empty
 
-    triggers: {
+    triggers:
       "click .js-new": "portfolio:item:new"
-    }
 )
