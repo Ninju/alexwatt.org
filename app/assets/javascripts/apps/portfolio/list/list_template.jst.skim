@@ -4,5 +4,6 @@ p class="lead"
 
 ul class="section-list"
 
-p 
-  a href="/portfolio_items/new" class="js-new" Add new item
+- if AlexApp.user_is_admin
+  div class="btn-group" 
+    button type="button" class="btn btn-small js-new" Add new item
