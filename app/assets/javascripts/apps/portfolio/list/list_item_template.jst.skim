@@ -9,7 +9,7 @@ h3 = @name
 - if AlexApp.user_is_admin
   div class="btn-toolbar"
     div class="btn-group"
-      button type="button" class="btn btn-small js-delete" 
+      button type="button" class="btn btn-small js-edit" 
         i class="icon icon-edit"
         '  Edit 
 
