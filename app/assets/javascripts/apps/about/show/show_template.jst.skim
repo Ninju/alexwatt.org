@@ -9,7 +9,8 @@ h4
 - colors = ["blue", "orange", "purple", "red", "green", "yellow"]
 
 - for language_stat in @language_stats
-  - color = colors[Math.floor(Math.random() * colors.length)]
+  - color = colors.pop()
+  - colors.unshift(color)
 
   div class="progress"
     div class="bar bar-#{color}" role="progressbar" style="width: #{100 * (2014 - language_stat.year_started) / (2014 - 2000)}%;"
