@@ -1,0 +1,21 @@
+---
+development:
+  cloud_name: superduperstudios
+  api_key: '544716331764387'
+  api_secret: <%= ENV['CLOUDINARY_API_SECRET'] %>
+  enhance_image_tag: true
+  static_image_support: false
+
+production:
+  cloud_name: superduperstudios
+  api_key: '544716331764387'
+  api_secret: <%= ENV['CLOUDINARY_API_SECRET'] %>
+  enhance_image_tag: true
+  static_image_support: true
+
+test:
+  cloud_name: superduperstudios
+  api_key: '544716331764387'
+  api_secret: <%= ENV['CLOUDINARY_API_SECRET'] %>
+  enhance_image_tag: true
+  static_image_support: false
