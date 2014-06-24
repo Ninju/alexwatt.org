@@ -9,6 +9,6 @@ class PortfolioItemSerializer < ActiveModel::Serializer
   end
 
   def screenshot_url
-    object.screenshot && object.screenshot.url
+    object.screenshot && object.screenshot_url
   end
 end
