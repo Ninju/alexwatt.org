@@ -4,7 +4,7 @@ AlexApp.module("Portfolio.List", (List, AlexApp, Backbone, Marionette, $, _) ->
 
   List.PortfolioItem = Marionette.ItemView.extend
     tagName: "li"
-    className: "section"
+    className: "section portfolio-item"
     template: AlexApp.getTemplate("apps/portfolio/list/list_item_template")
 
     triggers:

@@ -6,10 +6,11 @@ h4
   'Languages
   small a collection over the past 15 years
 
-- colors = ["blue", "orange", "purple", "red", "green", "yellow"]
+- colors = ["navy", "golf-green", "grey", "pink", "green", "golf-green", "orange", "purple", "yellow", "blue", "red"]
 
 - for language_stat in @language_stats
-  - color = colors[Math.floor(Math.random() * colors.length)]
+  - color = colors.pop()
+  - colors.unshift(color)
 
   div class="progress"
     div class="bar bar-#{color}" role="progressbar" style="width: #{100 * (2014 - language_stat.year_started) / (2014 - 2000)}%;"
