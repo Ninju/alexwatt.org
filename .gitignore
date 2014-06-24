@@ -16,5 +16,7 @@
 
 *.swp
 
+config/initializers/cloudinary_development.rb
+
 public/system
 .DS_Store
