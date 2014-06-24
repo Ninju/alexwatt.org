@@ -108,5 +108,15 @@ ul.section-list {
       h3 { text-align: left; }
       .image-gallery { float: left; margin-left: 0px; }
     }
+
+    &.portfolio-item:nth-child(2n) {
+      h3 { text-align: left; }
+      .image-gallery { float: left; margin-left: 0px; padding-right: 20px; }
+    }
+
+    &.portfolio-item:nth-child(2n + 1) {
+      .image-gallery { float: right; margin-right: 0px; padding-left: 20px; }
+      background-color: #f9f9f9;
+    }
   }
 }

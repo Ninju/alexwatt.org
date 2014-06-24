@@ -2,7 +2,7 @@ p class="lead"
   'This is a collection of some of my past and present work. 
   'It is only a small subset of the projects with which I have been involved.
 
-ul class="section-list"
+ul class="section-list" id="portfolio-items"
 
 - if AlexApp.user_is_admin
   div class="btn-group" 
