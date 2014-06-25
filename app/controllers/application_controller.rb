@@ -3,21 +3,18 @@ class ApplicationController < ActionController::Base
 
   private
 
-    def authenticate_admin_user!
-      if @current_user && @current_user.admin?
-        return true
-      end
-
-      render json: { status: 401 }, status: :unauthorized
+    def current_user
+      @current_user ||= session[:user_id] && User.find_by_id(session[:user_id])
     end
 
-    def authenticate_user_from_token!
-      user_email = params[:user_email].presence
-      user       = user_email && User.find_by_email(user_email)
+    def authenticate_user!
+      unless current_user.present?
+        render json: { status: 401 }, status: :unauthorized
+      end
+    end
 
-      if user && Devise.secure_compare(user.authentication_token, params[:user_token])
-        @current_user = user
-      else
+    def authenticate_admin_user!
+      unless current_user && current_user.admin?
         render json: { status: 401 }, status: :unauthorized
       end
     end

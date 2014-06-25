@@ -1,5 +1,5 @@
 class AuthenticationSerializer < ActiveModel::Serializer
-  attributes :user_admin, :user_token, :user_email, :success
+  attributes :success, :user_admin
 
   self.root = false
 
@@ -8,14 +8,6 @@ class AuthenticationSerializer < ActiveModel::Serializer
   end
 
   def user_admin
-    object.admin
-  end
-
-  def user_token
-    object.authentication_token
-  end
-
-  def user_email
-    object.email
+    object.admin?
   end
 end

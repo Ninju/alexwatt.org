@@ -1,5 +1,5 @@
 class PortfolioItemsController < ApplicationController
-  before_filter :authenticate_user_from_token!
+  before_filter :authenticate_user!
   before_filter :authenticate_admin_user!, except: [:index]
   before_filter :load_portfolio_item, only: [:update, :destroy]
 
