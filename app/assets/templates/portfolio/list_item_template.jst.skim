@@ -6,7 +6,7 @@ h3 = @name
 
 == @description_as_html
 
-- if AlexApp.user_is_admin
+- if gon.current_user_is_admin
   div class="btn-toolbar"
     div class="btn-group"
       button type="button" class="btn btn-small js-edit" 

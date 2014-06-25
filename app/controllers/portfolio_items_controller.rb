@@ -1,13 +1,13 @@
 class PortfolioItemsController < ApplicationController
-  before_filter :authenticate_user_from_token!
+  before_filter :authenticate_user!
   before_filter :authenticate_admin_user!, except: [:index]
   before_filter :load_portfolio_item, only: [:update, :destroy]
 
   respond_to :json
 
   def index
-    @portfolio_items = PortfolioItem.order("project_start_date DESC")
-    render json: ActiveModel::ArraySerializer.new(@portfolio_items, each_serializer: PortfolioItemSerializer).to_json
+    @portfolio_items = PortfolioItem.by_start_date
+    render json: PortfolioItemsSerializer.as_collection(@portfolio_items)
   end
 
   def create
