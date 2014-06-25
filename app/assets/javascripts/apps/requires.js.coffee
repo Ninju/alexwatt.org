@@ -2,4 +2,4 @@
 #= require_tree ./shared
 #= require ./setup
 #= require ./routing
-#= require ./renderer
+#= require_tree ./../../templates/
