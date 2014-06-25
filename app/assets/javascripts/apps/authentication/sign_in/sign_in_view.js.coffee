@@ -2,16 +2,15 @@ AlexApp.module("Authentication.SignIn", (SignIn, AlexApp, Backbone, Marionette, 
   SignIn.SignIn = Marionette.ItemView.extend
     template: JST["authentication/sign_in_template"]
 
-    events: {
-      "click .js-submit": "submitClicked"
-    }
-
-    submitClicked: (e) ->
-      e.preventDefault()
-      this.trigger("form:submit", this)
+    triggers:
+      "click .js-submit": "form:submit"
+    
+    ui:
+      error: "#auth-error-message"
+      form: "form"
 
     displayError: () ->
-      errorDiv = $("#auth-error-message")
+      errorDiv = @ui.error
 
       if not errorDiv.is(":hidden")
         errorDiv.stop(true, true)
