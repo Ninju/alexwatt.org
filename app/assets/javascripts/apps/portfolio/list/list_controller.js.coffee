@@ -9,10 +9,6 @@ AlexApp.module("Portfolio.List", (List, AlexApp, Backbone, Marionette, $, _) ->
         form.ajaxSubmit
           type: options.method or "POST"
 
-          data:
-            user_token: AlexApp.user_token
-            user_email: AlexApp.user_email
-
           success: (response) ->
             view.trigger("dialog:close")
             AlexApp.trigger("portfolio:list")

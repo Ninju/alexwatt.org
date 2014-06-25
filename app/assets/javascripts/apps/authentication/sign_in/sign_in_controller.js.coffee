@@ -1,5 +1,5 @@
 AlexApp.module("Authentication.SignIn", (SignIn, AlexApp, Backbone, Marionette, $, _) ->
-  SignIn.Controller = {
+  SignIn.Controller =
     signIn: () ->
       loginView = new SignIn.SignIn()
       
@@ -8,9 +8,7 @@ AlexApp.module("Authentication.SignIn", (SignIn, AlexApp, Backbone, Marionette, 
           dataType: "json"
           success: (response) ->
             if response.success
-              AlexApp.user_token = response.user_token
-              AlexApp.user_email = response.user_email
-              AlexApp.user_is_admin = (response.user_admin == "t") or (response.user_admin == true)
+              gon.current_user_is_admin = (response.user_admin == "t") or (response.user_admin == true)
 
               AlexApp.trigger("portfolio:list")
             else
@@ -18,5 +16,4 @@ AlexApp.module("Authentication.SignIn", (SignIn, AlexApp, Backbone, Marionette, 
       )
 
       AlexApp.contentRegion.show(loginView)
-  }
 )
