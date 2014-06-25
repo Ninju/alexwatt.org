@@ -16,7 +16,7 @@
 
 *.swp
 
-config/initializers/cloudinary_development.rb
+config/initializers/secret_environment_variables.rb
 
 public/system
 .DS_Store
