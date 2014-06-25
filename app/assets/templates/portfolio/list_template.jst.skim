@@ -4,6 +4,6 @@ p class="lead"
 
 ul class="section-list" id="portfolio-items"
 
-- if AlexApp.user_is_admin
+- if gon.current_user_is_admin
   div class="btn-group" 
     button type="button" class="btn btn-small js-new" Add new item

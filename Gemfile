@@ -15,7 +15,7 @@ gem 'devise'
 gem 'carrierwave'
 gem 'cloudinary'
 
-gem 'gon'
+gem 'gon', '3.0.5'
 
 # Gems used only for assets and not required
 # in production environments by default.
