@@ -1,7 +1,7 @@
 AlexApp.module("Navigator.List", (List, AlexApp, Backbone, Marionette, $, _) ->
   List.NavigationLink = Marionette.ItemView.extend({
     tagName: "li"
-    template: JST["apps/navigator/list/list_item_template"]
+    template: JST["navigator/list_item_template"]
 
     events: {
       "click a": "clickLink"

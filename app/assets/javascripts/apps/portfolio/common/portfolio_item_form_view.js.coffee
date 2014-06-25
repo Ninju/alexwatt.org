@@ -1,6 +1,6 @@
 AlexApp.module("Portfolio.Common", (Common, AlexApp, Backbone, Marionette, $, _) ->
   Common.PortfolioItemForm = Marionette.ItemView.extend
-    template: JST["apps/portfolio/common/portfolio_item_form_template"]
+    template: JST["portfolio/portfolio_item_form_template"]
 
     triggers:
       "click .js-cancel": "dialog:close"

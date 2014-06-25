@@ -1,6 +1,6 @@
 AlexApp.module("Authentication.SignIn", (SignIn, AlexApp, Backbone, Marionette, $, _) ->
   SignIn.SignIn = Marionette.ItemView.extend
-    template: JST["apps/authentication/sign_in/sign_in_template"]
+    template: JST["authentication/sign_in_template"]
 
     events: {
       "click .js-submit": "submitClicked"
