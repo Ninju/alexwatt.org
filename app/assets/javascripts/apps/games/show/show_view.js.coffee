@@ -1,6 +1,6 @@
 AlexApp.module("Games.Show", (Show, AlexApp, Backbone, Marionette, $, _) ->
   Show.LightsOut = Marionette.ItemView.extend
-    template: AlexApp.getTemplate("apps/games/show/lights_out_template")
+    template: JST["apps/games/show/lights_out_template"]
 
     initialize: () ->
       @title = "Lights Out"
@@ -10,7 +10,7 @@ AlexApp.module("Games.Show", (Show, AlexApp, Backbone, Marionette, $, _) ->
 
   Show.AirHockey = Marionette.ItemView.extend
     id: "air_hockey"
-    template: AlexApp.getTemplate("apps/games/show/air_hockey_template")
+    template: JST["apps/games/show/air_hockey_template"]
 
     initialize: () ->
       @title = "Air Hockey"
@@ -27,7 +27,7 @@ AlexApp.module("Games.Show", (Show, AlexApp, Backbone, Marionette, $, _) ->
 
   Show.FuelLife = Marionette.ItemView.extend
     id: "fuel_life"
-    template: AlexApp.getTemplate("apps/games/show/fuel_life_template")
+    template: JST["apps/games/show/fuel_life_template"]
 
     initialize: () ->
       @title = "Fuel Life"
@@ -47,7 +47,7 @@ AlexApp.module("Games.Show", (Show, AlexApp, Backbone, Marionette, $, _) ->
 
   Show.NewtonsCradle = Marionette.ItemView.extend
     id: "newtons_cradle"
-    template: AlexApp.getTemplate("apps/games/show/newtons_cradle_template")
+    template: JST["apps/games/show/newtons_cradle_template"]
 
     initialize: () ->
       @title = "Newton's Cradle"
