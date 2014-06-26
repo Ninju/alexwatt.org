@@ -2,7 +2,8 @@
 @import "twitter/bootstrap/mixins";
 
 @section-border-style: 1px dashed #000000;
-@section-background-color: #f9f9f9;
+@section-background-primary-color: #ffffff;
+@section-background-secondary-color: #f9f9f9;
 
 .play-button {
   content: url("games/play_button.png");
@@ -99,24 +100,33 @@ ul.section-list {
       }
     }
 
-    &:nth-child(2n) {
+    .right-float-section() {
       .image-gallery { float: right; margin-right: 0px; }
-      background-color: @section-background-color;
+      background-color: @section-background-secondary-color;
+    }
+
+    .left-float-section() {
+      h3 { text-align: left; }
+      .image-gallery { float: left; margin-left: 0px; }
+      background-color: @section-background-primary-color;
+    }
+
+    &:nth-child(2n) {
+      .right-float-section();
     }
 
     &:nth-child(2n + 1) {
-      h3 { text-align: left; }
-      .image-gallery { float: left; margin-left: 0px; }
+      .left-float-section();
     }
 
     &.portfolio-item:nth-child(2n) {
-      h3 { text-align: left; }
-      .image-gallery { float: left; margin-left: 0px; padding-right: 20px; }
+      .left-float-section();
+      .image-gallery { padding-right: 20px; }
     }
 
     &.portfolio-item:nth-child(2n + 1) {
-      .image-gallery { float: right; margin-right: 0px; padding-left: 20px; }
-      background-color: @section-background-color;
+      .right-float-section();
+      .image-gallery { padding-left: 20px; }
     }
   }
 }
