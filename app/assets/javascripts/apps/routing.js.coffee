@@ -4,7 +4,7 @@ AlexApp.navigate = (route, options) ->
 
 AlexApp.getCurrentRoute = () -> Backbone.history.fragment
 
-AlexApp.on "initialize:after", ->
+AlexApp.on "initialize:after", () ->
   if Backbone.history
     Backbone.history.start()
 
