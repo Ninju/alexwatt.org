@@ -1,6 +1,5 @@
 p class="lead"
-  'This is a collection of some of my past and present work. 
-  'It is only a small subset of the projects with which I have been involved.
+  'This is a small collection of some of my past and present work.
 
 ul class="section-list" id="portfolio-items"
 
