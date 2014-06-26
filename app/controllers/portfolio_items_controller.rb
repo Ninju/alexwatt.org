@@ -28,7 +28,7 @@ class PortfolioItemsController < ApplicationController
 
   private
     def load_portfolio_item
-      @portfolio_item = PortfolioItem.find_by_id(params[:id])
+      @portfolio_item = PortfolioItem.find(params[:id])
     end
 
     def portfolio_item_params
