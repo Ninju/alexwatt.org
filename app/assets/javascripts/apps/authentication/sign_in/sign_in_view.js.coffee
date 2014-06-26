@@ -1,4 +1,4 @@
-AlexApp.module("Authentication.SignIn", (SignIn, AlexApp, Backbone, Marionette, $, _) ->
+AlexApp.module "Authentication.SignIn", (SignIn, AlexApp, Backbone, Marionette, $, _) ->
   SignIn.SignIn = Marionette.ItemView.extend
     template: JST["authentication/sign_in_template"]
 
@@ -12,9 +12,8 @@ AlexApp.module("Authentication.SignIn", (SignIn, AlexApp, Backbone, Marionette, 
     displayError: () ->
       errorDiv = @ui.error
 
-      if not errorDiv.is(":hidden")
+      unless errorDiv.is(":hidden")
         errorDiv.stop(true, true)
         errorDiv.hide()
 
       errorDiv.show(500).delay(3000).fadeOut(500)
-)

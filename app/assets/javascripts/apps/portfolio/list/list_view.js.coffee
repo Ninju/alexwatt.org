@@ -1,4 +1,4 @@
-AlexApp.module("Portfolio.List", (List, AlexApp, Backbone, Marionette, $, _) ->
+AlexApp.module "Portfolio.List", (List, AlexApp, Backbone, Marionette, $, _) ->
   List.Empty = Marionette.ItemView.extend
     template: JST["portfolio/empty_template"]
 
@@ -19,4 +19,3 @@ AlexApp.module("Portfolio.List", (List, AlexApp, Backbone, Marionette, $, _) ->
 
     triggers:
       "click .js-new": "portfolio:item:new"
-)

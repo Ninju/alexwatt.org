@@ -1,23 +1,22 @@
-AlexApp.module("Portfolio.Common", (Common, AlexApp, Backbone, Marionette, $, _) ->
+AlexApp.module "Portfolio.Common", (Common, AlexApp, Backbone, Marionette, $, _) ->
   Common.PortfolioItemForm = Marionette.ItemView.extend
     template: JST["portfolio/portfolio_item_form_template"]
 
     triggers:
       "click .js-cancel": "dialog:close"
+      "click .js-submit": "form:submit"
 
-    events:
-      "click .js-submit": "submitClicked"
+    ui:
+      dateInput: ".date-input"
+      form: "form"
+      submitButton: ".js-submit"
 
-    onShow: () ->
-      dateInput = $(".date-input")
+    onShow: ->
+      dateInput = @ui.dateInput
       dateInput.datepicker
         dateFormat: "yy-mm-dd"
         maxDate: new Date()
 
-      dateInput.datepicker("setDate", this.model.get("project_start_date") or new Date())
+      dateInput.datepicker("setDate", @model.get("project_start_date") or new Date())
 
-    submitClicked: (e) ->
-      e.preventDefault()
-      this.trigger("form:submit", this)
-)
-
+      @ui.submitButton.text(@submitText or "Submit")

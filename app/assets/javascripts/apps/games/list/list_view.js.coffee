@@ -1,21 +1,13 @@
-AlexApp.module("Games.List", (List, AlexApp, Backbone, Marionette, $, _) ->
-  List.Game = Marionette.ItemView.extend({
+AlexApp.module "Games.List", (List, AlexApp, Backbone, Marionette, $, _) ->
+  List.Game = Marionette.ItemView.extend
+    template: JST["games/list_item_template"]
     tagName: "li"
     className: "section"
-    template: JST["games/list_item_template"]
 
-    events: {
-      "click a.js-show": "clickedGame"
-    }
+    triggers:
+      "click a.js-show": "games:show"
 
-    "clickedGame": (e) ->
-      e.preventDefault()
-      this.trigger("games:show", this.model)
-  })
-
-  List.Games = Marionette.CompositeView.extend({
+  List.Games = Marionette.CompositeView.extend
+    template: JST["games/list_template"]
     itemView: List.Game
     itemViewContainer: "ul.section-list"
-    template: JST["games/list_template"]
-  })
-)
