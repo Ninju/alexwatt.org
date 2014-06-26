@@ -1,27 +1,23 @@
-AlexApp.module("Navigator.List", (List, AlexApp, Backbone, Marionette, $, _) ->
-  List.NavigationLink = Marionette.ItemView.extend({
-    tagName: "li"
+AlexApp.module "Navigator.List", (List, AlexApp, Backbone, Marionette, $, _) ->
+  List.NavigationLink = Marionette.ItemView.extend
     template: JST["navigator/list_item_template"]
+    tagName: "li"
 
-    events: {
+    events:
       "click a": "clickLink"
-    }
 
     clickLink: (e) ->
-      if this.model.isInternalAppLink()
+      if @model.isInternalAppLink()
         e.preventDefault()
-        this.trigger("navigate", this.model)
+        @trigger("navigate", this.model)
 
-    onRender: () ->
-      if this.model.selected
-        this.$el.addClass("active")
-  })
+    onRender: ->
+      if @model.selected
+        @$el.addClass("active")
 
-  List.NavigationLinks = Marionette.CollectionView.extend({
+  List.NavigationLinks = Marionette.CollectionView.extend
     tagName: "ul"
     id: "navigation"
     className: "side-panel nav nav-pills nav-stacked"
     role: "navigation"
     itemView: List.NavigationLink
-  })
-)

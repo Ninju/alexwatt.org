@@ -1,13 +1,12 @@
-AlexApp.module("Games.Models", (Models, AlexApp, Backbone, Marionette, $, _) ->
+AlexApp.module "Games.Models", (Models, AlexApp, Backbone, Marionette, $, _) ->
   Models.Game  = Backbone.Model.extend()
-  Models.Games = Backbone.Collection.extend({
+  Models.Games = Backbone.Collection.extend
     model: Models.Game
-  })
 
-  API = {
-    getGames: () ->
+  API =
+    getGames: ->
       if Models.games == undefined
-        Models.games = new Models.Games([
+        Models.games = new Models.Games [
           {
             id: 1
             name: "Fuel Life"
@@ -61,10 +60,8 @@ AlexApp.module("Games.Models", (Models, AlexApp, Backbone, Marionette, $, _) ->
             image_path: "games/newtons_cradle.png"
             source_code_url: "https://github.com/Ninju/newtons_cradle"
           }
-        ])
+        ]
 
       Models.games
-  }
 
   AlexApp.reqres.setHandler("games:games", API.getGames)
-)
