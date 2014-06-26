@@ -8,7 +8,7 @@ AlexApp.module "Authentication.SignIn", (SignIn, AlexApp, Backbone, Marionette, 
           dataType: "json"
           success: (response) ->
             if response.success
-              gon.current_user_is_admin = (response.user_admin == "t") or (response.user_admin == true)
+              gon.current_user_is_admin = response.user_admin
               AlexApp.trigger("portfolio:list")
             else
               loginView.displayError()
