@@ -8,7 +8,7 @@ AlexApp.module "About", (About, AlexApp, Backbone, Marionette, $, _) ->
       AlexApp.execute("set:active:page", "about")
       About.Show.Controller.showAbout()
 
-  AlexApp.on "about:show", ->
+  AlexApp.on "about:show", () ->
     AlexApp.navigate("about")
     API.showAbout()
 
