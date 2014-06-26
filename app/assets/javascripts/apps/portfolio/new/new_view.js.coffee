@@ -1,9 +1,5 @@
-AlexApp.module("Portfolio.New", (New, AlexApp, Backbone, Marionette, $, _) ->
+AlexApp.module "Portfolio.New", (New, AlexApp, Backbone, Marionette, $, _) ->
   New.PortfolioItem = AlexApp.Portfolio.Common.PortfolioItemForm.extend
-    initialize: () ->
-      this.title = "Create Portfolio Item"
-
-    onShow: () ->
-      $(".js-submit").text("Create")
-      AlexApp.Portfolio.Common.PortfolioItemForm.prototype.onShow.call(this)
-)
+    initialize: ->
+      @title = "Create Portfolio Item"
+      @submitText = "Create"

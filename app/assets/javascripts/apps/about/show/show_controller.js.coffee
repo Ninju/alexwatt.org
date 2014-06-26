@@ -1,6 +1,6 @@
-AlexApp.module("About.Show", (Show, AlexApp, Backbone, Marionette, $, _) ->
-  Show.Controller = {
-    showAbout: () ->
+AlexApp.module "About.Show", (Show, AlexApp, Backbone, Marionette, $, _) ->
+  Show.Controller =
+    showAbout: ->
       aboutPageView = new Show.AboutPage
         model: new Backbone.Model
           language_stats: [
@@ -15,5 +15,3 @@ AlexApp.module("About.Show", (Show, AlexApp, Backbone, Marionette, $, _) ->
           ]
 
       AlexApp.contentRegion.show(aboutPageView)
-  }
-)

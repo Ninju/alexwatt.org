@@ -1,9 +1,9 @@
-AlexApp.module("Authentication.SignIn", (SignIn, AlexApp, Backbone, Marionette, $, _) ->
+AlexApp.module "Authentication.SignIn", (SignIn, AlexApp, Backbone, Marionette, $, _) ->
   SignIn.Controller =
-    signIn: () ->
+    signIn: ->
       loginView = new SignIn.SignIn()
       
-      loginView.on("form:submit", (obj) ->
+      loginView.on "form:submit", (obj) ->
         obj.view.ui.form.ajaxSubmit
           dataType: "json"
           success: (response) ->
@@ -12,7 +12,5 @@ AlexApp.module("Authentication.SignIn", (SignIn, AlexApp, Backbone, Marionette, 
               AlexApp.trigger("portfolio:list")
             else
               loginView.displayError()
-      )
 
       AlexApp.contentRegion.show(loginView)
-)

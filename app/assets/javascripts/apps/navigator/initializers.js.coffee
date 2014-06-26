@@ -1,12 +1,6 @@
-AlexApp.module("Navigator", (Navigator, AlexApp, Backbone, Marionette, $, _) ->
-  API = {
-    listNavigationElements: () ->
-      Navigator.List.Controller.listNavigationElements()
-  }
+AlexApp.module "Navigator", (Navigator, AlexApp, Backbone, Marionette, $, _) ->
 
-  AlexApp.commands.setHandler("set:active:page", (name) ->
+  AlexApp.commands.setHandler "set:active:page", (name) ->
     Navigator.List.Controller.setActivePage(name)
-  )
 
-  Navigator.on("start", () -> API.listNavigationElements())
-)
+  Navigator.on "start", () -> Navigator.List.Controller.listNavigationElements()
