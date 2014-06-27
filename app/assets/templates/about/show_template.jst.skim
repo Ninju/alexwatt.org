@@ -12,7 +12,7 @@ h4
   - color = colors.pop()
   - colors.unshift(color)
 
-  div class="progress"
+  div class="progress" data-toggle="tooltip" title=language_stat.description
     div class="bar bar-#{color}" role="progressbar" style="width: #{100 * (2014 - language_stat.year_started) / (2014 - 2000)}%;"
       span class="sr-only" = language_stat.language_name
 

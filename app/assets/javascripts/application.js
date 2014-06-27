@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require bootstrap
 //= require vendor/underscore
 //= require vendor/backbone
 //= require vendor/backbone.picky
