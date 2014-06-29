@@ -3,9 +3,8 @@ AlexApp.module "About.Show", (Show, AlexApp, Backbone, Marionette, $, _) ->
     template: JST["about/show_template"]
 
     ui:
-      progressBars: ".progress"
+      tooltips: "[data-toggle='tooltip']"
 
     onShow: ->
-      @ui.progressBars.tooltip
-        viewport: "body"
+      @ui.tooltips.tooltip
         placement: "top"
