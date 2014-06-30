@@ -6,5 +6,7 @@ AlexApp.module "About.Show", (Show, AlexApp, Backbone, Marionette, $, _) ->
       tooltips: "[data-toggle='tooltip']"
 
     onShow: ->
+      ###
       @ui.tooltips.tooltip
         placement: "top"
+      ###
