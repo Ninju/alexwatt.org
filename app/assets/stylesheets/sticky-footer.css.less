@@ -1,0 +1,50 @@
+@import "technical_color_scheme";
+
+@sticky-footer-height: 30px;
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: @sticky-footer-height;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: @sticky-footer-height;
+  background-color: @background-color-sticky-footer;
+  padding-bottom: @sticky-footer-height / 3;
+}
+
+#footer div {
+  color: @text-color-sticky-footer;
+}
+
+#footer a {
+  color: @link-color-sticky-footer;
+
+  &:hover {
+    text-decoration: none;
+    color: @link-hover-color-sticky-footer;
+  }
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 (@sticky-footer-height / 4);
+}
+.container .text-muted {
+  margin: (@sticky-footer-height / 3) 0;
+}

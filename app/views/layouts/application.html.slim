@@ -31,14 +31,17 @@ html lang="en"
       ga('create', 'UA-52340250-1', 'auto');
       ga('send', 'pageview');
   
-  body
+  body class="technical"
+    div id="header"
     div id="site-wrapper" class="container-fluid"
       div id="navigation-region"
 
       div class="center-column"
-        div class="page-header"
+        div id="brand"
           h1 
             'Alexander Watt
+            small 
+              'Bold, daring, and handsome are qualities Alexander Watt does not posesss
 
         div id="content-region"
           == yield

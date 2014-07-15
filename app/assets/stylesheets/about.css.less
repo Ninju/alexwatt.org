@@ -1,7 +1,11 @@
+@import "elements.less";
+
 .progress {
   @progress-bg-fade: 30%;
   @progress-bg-color: #000000;
   background-image: linear-gradient(fade(lighten(@progress-bg-color, 20%), @progress-bg-fade), fade(@progress-bg-color, @progress-bg-fade)) !important;
+
+  .rounded(10px) !important;
 
   /*
     &:hover {

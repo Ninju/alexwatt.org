@@ -13,25 +13,95 @@
  */
 @import "bootstrap_and_overrides.css";
 @import "twitter/bootstrap/bootstrap";
+@import "technical_color_scheme";
+@import "technical_styling";
+
 
 @gridColumns: 12;
 
 body {
-  padding-top: 60px;
-  padding-bottom: 20px;
+  width: 100%;
+}
+
+#header {
+  height: 5px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 40px;
+  background-color: @linkColor;
+}
+
+#brand h1 {
+  margin-bottom: 40px;
+  font-size: 60px !important;
+
+  small {
+    display: block;
+    margin-top: 10px;
+    text-transform: lowercase;
+  }
+}
+
+.technical {
+  font-family: @font-family-sans-serif;
+  background-color: @background-color;
+}
+
+h2,h3,h4,h5,h6 {
+  background-color: @background-color-section-heading;
+}
+
+ul.about {
+  li {
+    margin-bottom: 20px;
+
+    small {
+      font-style: italic;
+      display: block;
+    }
+  }
+}
+
+h4.heading {
+  margin: 11px;
+  margin-top: 30px;
+  margin-left: 0px;
+
+  span {
+    font-weight: normal !important;
+    padding: 7px !important;
+    color: #262626 !important;
+    font-family: Georgia !important;
+    font-size: 21px !important;
+    text-transform: lowercase;
+    background-color: @linkColor;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  small {
+    color: @text-color-small-heading !important;
+  }
+}
+
+h1 {
+  font-family: @font-family-serif !important;
 }
 
 #site-wrapper {
+  padding-bottom: 60px;
   margin: auto;
   .makeRow();
 }
 
 div.center-column {
-  .makeColumn(10)
+  .makeColumn(10);
+  margin-left: 100px;
 }
 
 .side-panel {
-  .makeColumn(4);
+  .makeColumn(2);
 }
 
 ul#navigation {
@@ -39,7 +109,7 @@ ul#navigation {
   text-align: right;
 
   font-family: "abeatbykai-regular";
-  font-size: 40px;
+  font-size: 20px;
   text-transform: lowercase;
 
   padding: 0px;
@@ -53,10 +123,7 @@ ul#navigation {
   }
 
   li {
-    margin: 35px;
-
     a {
-      background-color: #ffffff;
       color: #a0a0a0;
     }
 

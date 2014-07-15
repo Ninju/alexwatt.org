@@ -1,9 +1,9 @@
 @import "twitter/bootstrap/bootstrap";
 @import "twitter/bootstrap/mixins";
+@import "technical_color_scheme";
+@import "technical_styling";
 
-@section-border-style: 1px dashed #000000;
-@section-background-primary-color: #ffffff;
-@section-background-secondary-color: #f9f9f9;
+@section-border-style: 0px dashed @linkColor;
 
 ul.section-list {
   list-style-type: none;
@@ -11,27 +11,32 @@ ul.section-list {
   padding: 0px;
   width: 100%;
 
+  color: @text-color-section;
+
+  h1,h2,h3,h4,h5,h6 {
+    background-color: @background-color-section-heading !important;
+  }
+
   li.section {
     width: 100%;
     border-top: @section-border-style;
-    padding: 10px;
+    margin: 10px;
 
     .view-source-code {
       text-align: center;
-      font-size: 22px;
-      font-family: Helvetica;
+      font-size: @font-size-view-source-code;
+      font-family: @font-family-sans-serif;
 
-      margin: 10px;
-      padding: 10px;
+      margin: 3px;
+      padding: 5px;
 
       a {
         margin-left: 1px;
         text-decoration: none;
-        color: #333;
-        opacity: 0.3;
+        color: @link-color-view-source-code;
 
         &:hover {
-          opacity: 1.0;
+          color: @link-hover-color-view-source-code;
         } 
       }
 
@@ -43,7 +48,7 @@ ul.section-list {
     h3 {
       a {
         text-decoration: none;
-        color: #000;
+        color: @text-color-section-heading;
       }
 
       small {
@@ -97,13 +102,13 @@ ul.section-list {
 
     .right-float-section() {
       .image-gallery { float: right; margin-right: 0px; }
-      background-color: @section-background-secondary-color;
+      background-color: @background-color-secondary-section;
     }
 
     .left-float-section() {
       h3 { text-align: left; }
       .image-gallery { float: left; margin-left: 0px; }
-      background-color: @section-background-primary-color;
+      background-color: @background-color-primary-section;
     }
 
     &:nth-child(2n) {
