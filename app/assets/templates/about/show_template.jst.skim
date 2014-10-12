@@ -8,76 +8,50 @@ p
   'Delivering software solutions for over 10 years in
   'Computer Vision, Multimedia Attractions, Gaming, Mobile, Physics Simulation, and Web.
 
+ul
+  li
+    'iOS apps targeting iPad, iPhone, and iPod touch.
+
+  li
+    'Multi-platform mobile apps (mostly games), mostly in Lua.
+
+  li
+    'Web apps -- I started with Microsoft frontpage and table layouts over 12 years ago.
+
+  li
+    'High profile applications in off-beat languages (HaXe, OCaml)
+
+
 h4.heading
   span
     'Who am I?
 
 p
-  'I was born and raised in the UK. I have always loved learning, but have a special preference for the sciences, particularly Maths.
- 
+  'I was born and raised in the UK. I have always loved learning except during "the school years", and have a special preference for the sciences, particularly Maths. 
+  'I am married with no kids, and 1 cat.
+
 p 
-  'In a world where everyone tries to differentiate themselves as a 'quick learner', 
-  'it can be a challenge to stand out when this is in fact one of your key assets.
+  'I started coding when I was very young using frame and table based layouts in Microsoft Frontpage and Notepad. 
+  'I soon upgraded to PHP and Javascript alerts, before finally coming to my senses and buying a Mac.
 
 p
-  'My friends would describe me as
-  strong intelligent
-  ',
-  strong capable
-  ', and
-  strong funny
-  '. I am serious when the situation requires it, but prefer to keep a lighter mood. 
-  'Sometimes my sarcasm is too strong, and purposely so. 
-
-h4.heading
-  span 
-    'Philoshopy and Beliefs
-
-ul.about
-  li
-    'Better to release bad than to never release.
-    small
-      'There is always room for improvement. Think about the absolute minimum required feature set,
-      'and release this to the highest standard possible before moving forwards.
-
-  li
-    'Focus on the need-to-haves before worrying about the nice-to-haves.
-    small
-      'We always need to start somewhere, and there is no other place to start except on what MUST be.
-      'Without the 'need-to-haves' there is no product.
-
-  li
-    'Everyone is better than me in some way.
-    small
-      'Each person has an experience, memory, or knowledge that I don't have.
-      'There is always something to learn from everyone.
-  li
-    'Communication is vital.
-    small
-      'Clear and frequent communication is vital for maintaining good relationships,
-      'and ensuring progress is being made in the right direction in whatever endaevour it may be.
-
-  li
-    'Customer service is almost more important than the product.
-    small
-      'The product is the core of your business, but customer service is THE point of personal interaction with your customer.
-      'This is the moment where you can win their loyalty and satisfaction, or lose it forever.
-  
-  li 
-    'Avoid criticism.
-    small
-      'Criticising people only builds resentment. Focus on the positive, and offer constructive advice where necessary. 
-  
-  li 
-    'Smile more!
-    small
-      'When you smile, you feel better, and others feel better too.
+  'I quite like chess, languages, travelling, going to the gym, TV shows like Breaking Bad and Peep Show, and watching movies on medium sized televisions.
 
 
 h4.heading
   span
-    'Hiring me
+    'Working with me
 
 p 
-  'If you have an opportunity or project you'd like to share, drop me an email and I'll usually respond within 24 hours. 
-  'You can find the address on the footer below.
+  'If you're interested in working with me,
+  'or paying me to work with other people, then please don't hesitate to get in touch (<a href="mailto:el.zingo@gmail.com">el.zingo@gmail.com</a>).
+
+p 
+  'Ideally, I am looking for interesting full-time or part-time salaried work, 
+  'with an I-get-to-actually-spend-evenings-with-my-family schedule.
+  'I'm only available for remote work at the moment and will happily travel to a physical office on occasion.
+
+p
+  'Having said that, I'm always interested to hear about new opportunities, whether they be one-off iOS apps or long term contracting projects.
+  'So please don't be dissuaded from contacting me in any case. Thanks! - Alex
+
