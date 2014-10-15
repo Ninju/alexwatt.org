@@ -7,6 +7,10 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation
   # attr_accessible :title, :body
 
+  def update_sign_in_count!
+    self.update_attribute(:sign_in_count, self.sign_in_count + 1)
+  end
+
   class << self
     def find_by_authentication_params(params)
       user = find_for_database_authentication(email: params[:email])
