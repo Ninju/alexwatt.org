@@ -8,7 +8,7 @@ AlexApp.module "Authentication.SignIn", (SignIn, AlexApp, Backbone, Marionette, 
           dataType: "json"
           success: (response) ->
             if response.success
-              AlexApp.authenticationRegion.show("<p>You are logged in now!</p>");
+              #AlexApp.authenticationRegion.show("<p>You are logged in now!</p>");
               gon.current_user_is_admin = response.user_admin
               AlexApp.trigger("portfolio:list")
             else

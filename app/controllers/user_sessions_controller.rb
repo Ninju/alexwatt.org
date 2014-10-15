@@ -14,6 +14,7 @@ class UserSessionsController < ApplicationController
 
     def sign_in(user)
       session[:user_id] = user.id
+      user.update_sign_in_count!
       set_gon_admin!
     end
 end
