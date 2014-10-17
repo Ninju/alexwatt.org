@@ -6,20 +6,20 @@ h4.heading
 
 p 
   'Delivering software solutions for over 10 years in
-  'Computer Vision, Multimedia Attractions, Gaming, Mobile, Physics Simulation, and Web.
+  'Multimedia Attractions, Gaming, Mobile, Physics Simulation, and Web.
 
 ul
   li
-    'iOS apps targeting iPad, iPhone, and iPod touch.
+    'Web apps
 
   li
-    'Multi-platform mobile apps (mostly games), mostly in Lua.
+    'Cross-platform mobile games
 
   li
-    'Web apps -- I started with Microsoft frontpage and table layouts over 12 years ago.
+    'Native iOS apps 
 
   li
-    'High profile applications in off-beat languages (HaXe, OCaml)
+    'High profile interactive attractions and digital experiences
 
 
 h4.heading
@@ -27,30 +27,31 @@ h4.heading
     'Who am I?
 
 p
-  'I was born and raised in the UK. I have always loved learning except during "the school years", and have a special preference for the sciences, particularly Maths. 
+  'I'm a software developer and generalist from the UK. 
+  'I have always loved learning with a special preference for the sciences, particularly Maths. 
 
-p 
-  'I started coding when I was very young using frame and table based layouts in Microsoft Frontpage and Notepad. 
-  'I soon upgraded to PHP and Javascript alerts, before finally coming to my senses and buying a Mac.
 
 p
-  'I quite like chess, languages, travelling, going to the gym, TV shows like Breaking Bad and Peep Show, and watching movies on medium sized televisions.
+  'I became hooked on coding over 13 years ago and counting. 
+  'I've developed everything from basic websites to complex networking applications. 
+
+p 
+  'My interests are extremely varied and it would be impossible to list them all.
+  'I can find interest in almost any topic, even those typically perceived as boring by most. 
 
 
 h4.heading
   span
     'Working with me
 
-p 
-  'If you're interested in working with me,
-  'or paying me to work with other people, then please don't hesitate to get in touch (<a href="mailto:el.zingo@gmail.com">el.zingo@gmail.com</a>).
-
-p 
-  'Ideally, I am looking for interesting full-time or part-time salaried work, 
-  'with an I-get-to-actually-spend-evenings-with-my-family schedule.
-  'I'm only available for remote work at the moment and will happily travel to a physical office on occasion.
+p
+  'If you're looking for a new guy to add to your team, send an email and let's talk about it (<a href="mailto:el.zingo@gmail.com">el.zingo@gmail.com</a>).
+  'You have nothing to lose - we can arrange a call and finish within minutes, that is the time it takes to decide whether to contact me.
 
 p
-  'Having said that, I'm always interested to hear about new opportunities, whether they be one-off iOS apps or long term contracting projects.
-  'So please don't be dissuaded from contacting me in any case. Thanks! - Alex
+  'Nearly all of my experience is working remotely.
+  'I'm a fan and user of 
+  a href="http://pomodorotechnique.com/" The Pomodoro Technique
+  ', and I track everything with enthusiasm. 
+  'Nothing beats human interaction, but working remotely gives you real freedom in managing your time and that's very powerful.
 
