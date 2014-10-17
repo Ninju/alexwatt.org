@@ -28,18 +28,20 @@ body {
   width: 100%;
   padding: 0px;
   margin: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   background-color: @linkColor;
 }
 
 #brand h1 {
   margin-bottom: 40px;
   font-size: 60px !important;
+  font-weight: normal !important;
 
   small {
     display: block;
     margin-top: 10px;
     text-transform: lowercase;
+    font-size: 16px;
   }
 }
 
@@ -97,7 +99,11 @@ h1 {
 
 div.center-column {
   .makeColumn(10);
-  margin-left: 100px;
+  position:absolute;
+  margin-left: 20%;
+  width: 60%;
+  margin-top: 15px;
+  margin-bottom: 40px;
 }
 
 .side-panel {
