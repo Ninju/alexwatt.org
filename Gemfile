@@ -55,3 +55,5 @@ gem 'unicorn', '4.3.1'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'newrelic_rpm'
