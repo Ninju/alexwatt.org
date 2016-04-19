@@ -20,4 +20,4 @@ div id="lights_out"
     'The goal is to turn all the lights off. Simply click a light to flip it on or off, but this will also flip it's neighbours (north, east, south, west).
 
   p
-    a href="/assets/javascripts/games/lights_out.js" View Source Code
+    a href="https://github.com/Ninju/js-lights-out" View Source Code
