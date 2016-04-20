@@ -1,7 +1,5 @@
 p class="lead"
-  'I'm a
-  strong developer
-  '&nbsp;with a strong background in passionately seeking out new skills and ideas.
+  'I'm a developer with a strong background in passionately seeking out new skills and ideas.
 
 h4.heading
   span Overview
@@ -23,24 +21,23 @@ ul
   li
     'High profile interactive attractions and digital experiences
 
-
 h4.heading
   span
     'Who am I?
 
 p
   'I'm a software developer and generalist from the UK. 
-  'I have always loved learning with a special preference for the sciences, particularly Maths. 
-
+  'I have always loved learning with a special preference for the sciences.
 
 p
-  'I became hooked on coding over 13 years ago and counting. 
-  'I've developed everything from basic websites to complex networking applications. 
+  'I became hooked on coding when I was 13 years old,
+  'starting out with simple Javascript apps and building small (and some large) dynamic websites with PHP.
+  'I progressed to Python and Ruby, and then Django and Ruby on Rails respectively.
+  'Since then I've met iconic languages such as LISP, Smalltalk, and Haskell, and spent time with Objective-C through iOS development.
 
 p 
   'My interests are extremely varied and it would be impossible to list them all.
-  'I am currently very interested in machine learning, mathematics, and business.
-
+  'A small few include artificial intelligence, algebra, number theory, philosophy, and foreign languages.
 
 h4.heading
   span
@@ -52,8 +49,8 @@ p
   '.
 
 p
-  'I have a great deal of experience working remotely.
+  'The majority of my experience is working remotely and contracting, but I am open to discussing any type of role.
   'At the moment I'm using 
   a href="https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method" The Eisenhower Method
-  '  of planning my time.
+  '  of planning my time and am big on setting goals for everything.
 
