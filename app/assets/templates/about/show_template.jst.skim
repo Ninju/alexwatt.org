@@ -1,5 +1,7 @@
 p class="lead"
-  'I'm a developer. I like to solve tough problems and deliver great experiences to customers.
+  'I'm a
+  strong developer
+  '&nbsp;with a strong background in passionately seeking out new skills and ideas.
 
 h4.heading
   span Overview
@@ -16,7 +18,7 @@ ul
     'Cross-platform mobile games
 
   li
-    'Native iOS apps 
+    'Native iOS & tvOS apps 
 
   li
     'High profile interactive attractions and digital experiences
