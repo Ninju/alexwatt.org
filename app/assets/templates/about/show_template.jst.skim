@@ -37,20 +37,20 @@ p
 
 p 
   'My interests are extremely varied and it would be impossible to list them all.
-  'A small few include artificial intelligence, algebra, number theory, philosophy, and foreign languages.
+  'I can find interest in almost anything, even those things typically perceived as boring by most.
 
 h4.heading
   span
     'Working with me
 
 p
+  'I have a great deal of experience working remotely, which has lead me down the path of always striving to better my time management and productivity.
+  'At the moment I'm using
+  a href="https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method" The Eisenhower Method
+  '  of prioritizing tasks. I believe that setting clear goals and objectives for absolutely everything is vital to productivity in all walks of life.
+
+p
   'Feel free to get in touch for any reason. Best via email at 
   a href="mailto:alex@alexwatt.org" alex@alexwatt.org
   '.
-
-p
-  'The majority of my experience is working remotely and contracting, but I am open to discussing any type of role.
-  'At the moment I'm using 
-  a href="https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method" The Eisenhower Method
-  '  of planning my time and am big on setting goals for everything.
 
