@@ -33,6 +33,7 @@ AlexApp.module "Navigator.Models", (Models, AlexApp, Backbone, Marionette, $, _)
           { name: "games", url: "games", navigationTrigger: "games:list" }
           { name: "portfolio", url: "portfolio", navigationTrigger: "portfolio:list" }
           { name: "github", url: "http://www.github.com/Ninju" }
+          { name: "linkedin", url: "https://linkedin.com/in/alex-watt-4572319b" }
         ]
 
       Models.links
