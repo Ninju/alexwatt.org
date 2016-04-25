@@ -2,7 +2,7 @@ p class="alert-info alert"
   'Due to reasons of confidentiality,
   'the portfolio is only available to authorized users. 
   'If you would like access please contact me at 
-  a href="mailto:el.zingo@gmail.com" el.zingo@gmail.com
+  a href="mailto:alex@alexwatt.org" alex@alexwatt.org
   '.  Thank you for your understanding.
 
 p class="alert alert-danger" id="auth-error-message"
